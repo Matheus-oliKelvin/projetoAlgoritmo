@@ -69,3 +69,10 @@ while not login[0]:
         usuarios.append([email, senha, tipo]) 
         print("Usuário cadastrado com sucesso!")
 
+while login[0] and login[1] == "cliente":
+    print ("1 - ver produtos")
+    print (" 2 - ver animais")
+    print ("3 - comprar")
+    print ("4 - agendar retirada")
+    print ("#########")
+    print ("0 - sair")
