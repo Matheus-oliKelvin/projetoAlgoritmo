@@ -86,3 +86,27 @@ while not login[0]:
         usuarios.append([email, senha, tipo]) 
         print("Usuário cadastrado com sucesso!")
 
+while login[0] and login[1] == "adm":
+    
+    while True:
+        print("\n Bem vindo Admin! Selecione a opção desejada: ")
+        print("1- Gerenciar Rebanho") 
+        print("2- Gerenciar Produção e Derivados ")
+        print("3- ###########")
+        print("0- Sair")
+        
+        opcao= int(input(" digite a opção : "))
+
+        if opcao >=1 and opcao<=3:
+            break
+        else:
+            print("Opção invalida! Digite novamente\n")
+            
+        if opcao == 0:
+            print("Saindo...")
+        break
+        
+
+
+
+
