@@ -119,32 +119,37 @@ while login[0] and login[1] == "cliente":
             print ("\n")  
     
     elif opcao == "3":
-        compra = input ("o que deseja comprar: ").lower().strip()
+        compra = input("O que deseja comprar: ").lower().strip()
         encontrado = False
 
-        for produto in produtos:
-            if compra == produto [0]:
-            
-                encontrado = True
-                
-                quantidade = int (input ("diga a quantidade do produto escolhido deseja comprar: "))
+    for produto in produtos:
+        if compra == produto[0]:
+            encontrado = True
+            quantidade = int(input("Quantidade: "))
 
-                if int (produto[2]) >= quantidade:
-                    produto [2] -= quantidade
-                
+            if produto[2] >= quantidade:
+                produto[2] -= quantidade
                 valor = produto[1] * quantidade
                 total_compra += valor
-                print (f"compra realizada no valor de R${valor}")
-                break
-        else:
-            print ("estoque insuficiente!")
-        
-        if not encontrado:
-            print ("produto nao encontrado!")
-    
-    elif opcao =="5":
-        print (f"o valor da sua compra esta em R${total_compra}")
-            
+                print("Compra realizada! Total:", valor)
+            else:
+                print("Estoque insuficiente")
+            break
 
-        
-            
+    if not encontrado:
+        for animal in animais:
+            if compra == animal[0]:
+                encontrado = True
+                quantidade = int(input("Quantidade: "))
+
+                if animal[2] >= quantidade:
+                    animal[2] -= quantidade
+                    valor = animal[1] * quantidade
+                    total_compra += valor
+                    print("Compra realizada! Total:", valor)
+                else:
+                    print("Estoque insuficiente")
+                break
+
+    if not encontrado:
+        print("Produto não encontrado")
