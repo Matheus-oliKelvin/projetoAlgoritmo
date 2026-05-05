@@ -1,9 +1,9 @@
-produtos = [["leite", 10, 20], ["queijo", 20, 10], ["manteiga", 5, 10]]
-animais = [["vacas", 1000, 5], ["leitoes", 300, 5], ["ovelhas", 350, 5]]1
+produtos = [["leite", 10, 20], ["queijo", 20, 10], ["soja", 5, 10]]
+animais = [["vacas", 1000, 5], ["leitoes", 300, 5], ["ovelhas", 350, 5]]
 
 total_compra = 0
 
-usuarios= [["a", "a", "cliente" ]]
+usuarios= [["a", "a", "cliente", 1 ]]
 login=[False, None]
 
 while not login[0]:
@@ -123,17 +123,32 @@ while login[0] and login[1] == "cliente":
         encontrado = False
 
         for produto in produtos:
+<<<<<<< Updated upstream
             if compra == produto [0].lower():
             
                 encontrado = True
-
+                
                 quantidade = int (input ("diga a quantidade do produto escolhido deseja comprar: "))
 
-            if produto [2] >= quantidade:
-                produto [2] -= quantidade
+                if int (produto[2]) >= quantidade:
+                    produto [2] -= quantidade
                 
-            valor = produto[1] * quantidade
-            total_compra += valor
-            print (f"compra realizada no valor de {total_compra}")
-        break
+                valor = produto[1] * quantidade
+                total_compra += valor
+                print (f"compra realizada no valor de R${valor}")
+                break
+        else:
+            print ("estoque insuficiente!")
+        
+        if not encontrado:
+            print ("produto nao encontrado!")
+    
+    elif opcao =="5":
+        print (f"o valor da sua compra esta em R${total_compra}")
             
+=======
+            if compra in produtos [0]:
+                encontrado = True
+                break
+            
+>>>>>>> Stashed changes
