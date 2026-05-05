@@ -1,3 +1,7 @@
+produtos = [["leite", 10, 20], ["queijo", 20, 10], ["manteiga", 5, 10]]
+animais = [["vacas", 1000, 5], ["leitoes", 300, 5], ["ovelhas", 350, 5]]
+
+total_compra = []
 
 usuarios= [["a", "a", "cliente" ]]
 login=[False, None]
@@ -88,13 +92,13 @@ while not login[0]:
 
 while login[0] and login[1] == "cliente":
     
-    produtos = [["leite", 10, 20], ["queijo", 20, 10], ["manteiga", 5, 10]]
-    animais = [["vacas", 1000, 5], ["leitoes", 300, 5], ["ovelhas", 350, 5]]
+    
     
     print ("1 - ver produtos")
-    print (" 2 - ver animais")
+    print ("2 - ver animais")
     print ("3 - comprar")
     print ("4 - agendar retirada")
+    print ("5 - ver total da compra")
     print ("#########")
     print ("0 - sair")
 
@@ -115,22 +119,24 @@ while login[0] and login[1] == "cliente":
             print ("\n")  
     
     elif opcao == "3":
-        compra = input ("o que deseja comprar: ")
+        compra = input ("o que deseja comprar: ").lower().strip()
+        encontrado = False
 
-        encontrado = False    
         for produto in produtos:
-            if compra in produtos [0]:
-                encontrado = True
-                break
-            if encontrado:
-                qtd = int (input (f"quantos de {compra} voce deseja adquirir: "))
+            if compra == produto [0].lower():
             
-            if produtos[2] >= qtd:
-                produtos[2] -= qtd
-                print ("compra realizada!")
+                encontrado = True
+
+                quantidade = int (input ("diga a quantidade do produto escolhido deseja comprar: "))
+
+            if produto [2] >= quantidade:
+                produto [2] -= quantidade
+                
+            valor = produto[1] * quantidade
+            total_compra += valor
+            print (f"compra realizada no valor de {total_compra}")
+            
             else:
                 print ("estoque insuficiente!")
-           
-
-
+    
         
