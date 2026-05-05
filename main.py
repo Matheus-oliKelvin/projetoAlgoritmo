@@ -1,7 +1,7 @@
 produtos = [["leite", 10, 20], ["queijo", 20, 10], ["manteiga", 5, 10]]
-animais = [["vacas", 1000, 5], ["leitoes", 300, 5], ["ovelhas", 350, 5]]
+animais = [["vacas", 1000, 5], ["leitoes", 300, 5], ["ovelhas", 350, 5]]1
 
-total_compra = []
+total_compra = 0
 
 usuarios= [["a", "a", "cliente" ]]
 login=[False, None]
@@ -135,8 +135,5 @@ while login[0] and login[1] == "cliente":
             valor = produto[1] * quantidade
             total_compra += valor
             print (f"compra realizada no valor de {total_compra}")
+        break
             
-            else:
-                print ("estoque insuficiente!")
-    
-        
