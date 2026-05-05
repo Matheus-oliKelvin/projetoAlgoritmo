@@ -123,8 +123,7 @@ while login[0] and login[1] == "cliente":
         encontrado = False
 
         for produto in produtos:
-<<<<<<< Updated upstream
-            if compra == produto [0].lower():
+            if compra == produto [0]:
             
                 encontrado = True
                 
@@ -146,9 +145,6 @@ while login[0] and login[1] == "cliente":
     elif opcao =="5":
         print (f"o valor da sua compra esta em R${total_compra}")
             
-=======
-            if compra in produtos [0]:
-                encontrado = True
-                break
+
+        
             
->>>>>>> Stashed changes
