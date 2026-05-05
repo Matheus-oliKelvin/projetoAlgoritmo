@@ -1,5 +1,5 @@
 
-usuarios= []
+usuarios= [["a", "a", "cliente" ]]
 login=[False, None]
 
 while not login[0]:
@@ -87,9 +87,50 @@ while not login[0]:
         print("Usuário cadastrado com sucesso!")
 
 while login[0] and login[1] == "cliente":
+    
+    produtos = [["leite", 10, 20], ["queijo", 20, 10], ["manteiga", 5, 10]]
+    animais = [["vacas", 1000, 5], ["leitoes", 300, 5], ["ovelhas", 350, 5]]
+    
     print ("1 - ver produtos")
     print (" 2 - ver animais")
     print ("3 - comprar")
     print ("4 - agendar retirada")
     print ("#########")
     print ("0 - sair")
+
+    opcao = input ("diga uma opção valida: ")
+
+    if opcao == "1":
+        for produtos in produtos:
+            print ("Nome:", produtos[0])
+            print ("Preço:", produtos[1],"$")
+            print ("Estoque:", produtos[2], "em estoque")
+            print ("\n")    
+    
+    elif opcao == "2":
+        for animais in animais:
+            print ("Nome:", animais[0])
+            print ("Preço:", animais[1],"$")
+            print ("Estoque:", animais[2], "em estoque")
+            print ("\n")  
+    
+    elif opcao == "3":
+        compra = input ("o que deseja comprar: ")
+
+        encontrado = False    
+        for produto in produtos:
+            if compra in produtos [0]:
+                encontrado = True
+                break
+            if encontrado:
+                qtd = int (input (f"quantos de {compra} voce deseja adquirir: "))
+            
+            if produtos[2] >= qtd:
+                produtos[2] -= qtd
+                print ("compra realizada!")
+            else:
+                print ("estoque insuficiente!")
+           
+
+
+        
