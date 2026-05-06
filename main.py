@@ -1,6 +1,9 @@
 
 usuarios= []
 login=[False, None]
+animais=[]
+produtos=[]
+producao_Leite = []
 
 while not login[0]:
 
@@ -21,6 +24,7 @@ while not login[0]:
     if opcao == 0:
         print("Saindo...")
         break
+
 
     elif opcao == 1:
         email= input("Digite seu e-mail: ")
@@ -44,28 +48,23 @@ while not login[0]:
     elif opcao == 2:
 
         while True: 
+            email_existe= False
+            email_invalido=False
+
             email= input("Digite seu e-mail: ")
             
             for usuario in usuarios:
                 if usuario[0] == email:
                     print("Esse e-mail já está cadastrado!Digite novamente")
-                    verificador= False
+                    email_existe= True
                     break
-                else:
-                    verificador=True
-
-
-            if "@" in email:
-                verificador= True
-            else:
-                print("email inválido, falta o @:")
-                verificador=False
-                break
-
-
-            if verificador :
+                   
+            if "@" not in email:
+                print("email inválido, falta o @! Digite novamente")
+                email_invalido= True
+              
+            if  not email_invalido and not email_existe :
                     break
-
 
         while True:
             senha= input("Digite sua senha : ")
@@ -95,7 +94,7 @@ while login[0] and login[1] == "adm":
         print("2- Buscar Animais ") 
         print("3- Atualizar Animais ") 
         print("4- Remover Animais")
-        print("5- Registrar litros de leite ordenhado ")
+        print("5- Registrar produção de leite")
         print("6- Adcionar produtos fabricados")
         print("7- ###########")
         print("0- Sair")
@@ -111,19 +110,11 @@ while login[0] and login[1] == "adm":
         print("Saindo...")
         break
         
+
     elif opcao == 1:
-        animais=[]
-
-        while True:
-            tipoAnimal= input("Qual o tipo do animal: ").lower()
-
-            if tipoAnimal not in ("caprino", "ovino", "suino", "leitao", "bovino de leite"):
-                print("Animal inválido! Digite novamente ")
-            else:
-                break
-
-
-        identificador = input("Digite a identificação desse", tipoAnimal,": ").lower()
+        tipoAnimal= input("Qual o tipo do animal: ").lower()
+        racaAnimal= input("Qual a raça do animal: ").lower()
+        identificador = input(f"Digite a identificação desse {tipoAnimal} ").lower()
 
 
         while True:
@@ -134,7 +125,8 @@ while login[0] and login[1] == "adm":
             else:
                 break
         
-        animais.append([tipoAnimal, identificador, status])
+        animais.append([tipoAnimal, identificador, status, racaAnimal])
+
 
     elif opcao == 2:
         buscar = input("Digite a identificação do animal que deseja buscar: ").lower()
@@ -149,6 +141,7 @@ while login[0] and login[1] == "adm":
 
         if not encontrado:
             print("Animal não encontrado no sistema!")
+
 
     elif opcao == 3:
         buscar= input("Digite a identificação do animal que deseja alterar: ").lower()
@@ -177,6 +170,7 @@ while login[0] and login[1] == "adm":
 
         else:
              print("Animal não encontrado no sistema!")
+
         
     elif opcao == 4:
         buscar= input("Digite a identificação do animal que deseja remover: ").lower()
@@ -192,7 +186,40 @@ while login[0] and login[1] == "adm":
             animais.remove(buscar)
             print("Animal removido do sistema! ")
         else:
-            print("Animal não encontrado no sistema!")
+            print("Animal não encontrado no sistema!") 
+
+
+    elif opcao == 5:
+        verificador = 0
+
+        for animal in animais:
+            if animal[2] == "lactacao" and animal[1] not in producao_Leite: 
+                leite_produzido = ("Digite a produção de leite diária do animal:",animal[1] )
+
+
+                producao_Leite.append([animal[1],leite_produzido ])
+            else:
+                verificador += 1
+        
+        if verificador >= len(animais):
+            print("Não existe animais disponíveis para a registraçaõ")
+
+    elif opcao == 6:
+
+        while True:
+           nomeProduto = input("Digite o nome do produto: ")
+           pesoProduto = float(input("Digite o peso do produto: "))
+           valorProduto = float(input("Digite o valor de venda (por kg) do produto: "))
+
+           produtos.append([nomeProduto, pesoProduto, valorProduto])
+
+           print("\nProduto cadastrado!\n")
+
+           continuar= int(input("Deseja adicionar outro produto? (1-sim) (0-não) :"))
+
+           if continuar == 0:
+               break
+ 
 
 
        
