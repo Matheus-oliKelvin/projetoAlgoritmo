@@ -6,8 +6,8 @@ total_compra = 0
 usuarios = [["a", "a", "cliente"]]
 login = [False, None]
 
-agendar_data = [[10.04, 11,.04]]
-agendar_hora = [[12.22, 12.23]]
+agendar_data = ["10.04"]
+agendar_hora = ["12.22"]
 
 
 while not login[0]:
@@ -94,8 +94,9 @@ while login[0] and login[1] == "cliente":
     print("\n1 - ver produtos")
     print("2 - ver animais")
     print("3 - comprar")
-    print ("4 - agendar retirada")
-    print("5 - valor total das compras")
+    print("4 - valor total das compras")
+    print("5 - agendar retirada")
+    print("6 - ver agenda de retiradas")
     print("0 - sair")
     
     opcao = input("digite uma opção: ")
@@ -151,27 +152,37 @@ while login[0] and login[1] == "cliente":
             print("Não encontrado")
 
     
-    elif opcao == "4":
-        data = (input ("qual a data que deseja fazer a retirada: ex (12.03): "))
-        hora = (input ("qual a hora que deseja fazer a retirada: ex (15.55): "))
-
-        agendar_data.append (data)
-        agendar_hora.append (hora)
-    
-        if data in agendar_data:
-            print ("data indisponivel. escolha outra!")
-        else:
-            print (f"data agendada! para o dia {data} as {hora} ")
-        if hora in agendar_hora:
-            print ("")
-    
-    
-    
-    
-    
-    
     elif opcao == "5":
-        print(f"o total da suas compras foram de: R${total_compra}" )
+        
+        data = input("qual a data (ex: 12.04): ").strip()
+        hora = input("qual a hora (ex: 15.30): ").strip()
+        print ("\n")
+    
+
+        if data in agendar_data and hora in agendar_hora:
+            print("Data e hora já estão ocupadas!")
+            print ("\n")
+        else:
+            agendar_data.append(data)
+            agendar_hora.append(hora)
+
+            print(f"Agendado para {data} às {hora}")
+                
+    
+    elif opcao == "6":
+        print("\n===== AGENDA =====")
+
+        datas_mostradas = []
+
+        for i in range(len(agendar_data)):
+            if agendar_data[i] not in datas_mostradas:
+                print(f"\n{agendar_data[i]}:")
+
+            for j in range(len(agendar_data)):
+                if agendar_data[j] == agendar_data[i]:
+                    print(f" - {agendar_hora[j]}")
+
+            datas_mostradas.append(agendar_data[i])
 
     
     
@@ -200,25 +211,3 @@ while login[0] and login[1] == "cliente":
     
     
     
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    elif opcao == "0":
-        break
