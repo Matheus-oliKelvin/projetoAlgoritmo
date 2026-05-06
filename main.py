@@ -202,30 +202,31 @@ while login[0] and login[1] == "cliente":
 
         if opcao_pagamento == "1":
             desconto = total_compra * 0.05
-            desconto_total = total_compra - desconto
+            desconto_total_pix = total_compra - desconto
             print ("PIX: 183.238.244-36")
-            print (f"O DESCONTO FOI DE {desconto} E SUAS COMPRAS FICARAM EM: R${desconto_total}")
-            break
-            
+            print (f"O DESCONTO FOI DE {desconto} E SUAS COMPRAS FICARAM EM: R${desconto_total_pix}")
             
         elif opcao_pagamento == "2":
-            cartao = (input ("qual numero do cartão: "))
-            cvc = int (input ("qual CVC do cartão: "))
-            validade = float (input ("qual a validade do cartão: "))
-            funcao = input ("credito ou debito: ")
-
-            for i in (len(cartao)):
-                if i > 12 or i < 12:
-                    print ("numero do cartão invalido")
+            cartao = input("numero do cartão: ")
+            cvc = input("CVC: ")
+            validade = input("validade (MM/AA): ")
         
-            for i in (len(cvc)):
-                if i > 3 or i < 3:
-                    print ("numero do CVC invalido!")
-            
-            for i in (len(validade)):
-                if validade > 5 or validade < 5:
-                    print ("validade do cartão invalida!")
+            desconto2 = total_compra * 0.05
+            desconto_total_cartao = total_compra + desconto2
 
+            if len(cartao) != 20:
+                print("cartão invalido")
+
+            elif len(cvc) != 3:
+                print("CVC invalido")
+
+            elif len(validade) != 5 or validade[2] != "/":
+                print("validade invalida")
+
+                
+
+            else:
+                print(f"Pagamento aprovado! No valor de {desconto_total_cartao} e o juros cobrado foi de {desconto2}" )
 
             
 
