@@ -103,3 +103,22 @@ while login[0] and login[1] == "cliente":
 
     elif opcao == "0":
         break
+print
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+``

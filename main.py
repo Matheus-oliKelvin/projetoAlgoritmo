@@ -1,5 +1,5 @@
 produtos = [["leite", 10, 20], ["queijo", 20, 10], ["soja", 5, 10]]
-animais = [["vacas", 1000, 5], ["leitoes", 300, 5], ["ovelhas", 350, 5]]
+animais = [["vaca", 1000, 5, "nelore"], ["leitão", 300, 5, "piau"], ["ovelha", 350, 5, "dorper"]]
 
 total_compra = 0
 
@@ -97,6 +97,7 @@ while login[0] and login[1] == "cliente":
     print("4 - valor total das compras")
     print("5 - agendar retirada")
     print("6 - ver agenda de retiradas")
+    print ("7 - pagamento")
     print("0 - sair")
     
     opcao = input("digite uma opção: ")
@@ -110,9 +111,11 @@ while login[0] and login[1] == "cliente":
     
     elif opcao == "2":
         for animal in animais:
-            print ("Nome:", animal[0]) 
+            print ("=====LOJA ANIMAIS=====")
+            print ("Animal:", animal[0]) 
             print ("Preço:", animal[1],"$") 
             print ("Estoque:", animal[2], "em estoque") 
+            print ("Raça:", animal[3])
             print ("\n")
     
     elif opcao == "3":
@@ -152,6 +155,11 @@ while login[0] and login[1] == "cliente":
             print("Não encontrado")
 
     
+    elif opcao == "4":
+        print (f"o valor das compras estão em: R${total_compra}")
+    
+    
+    
     elif opcao == "5":
         
         data = input("qual a data (ex: 12.04): ").strip()
@@ -170,7 +178,7 @@ while login[0] and login[1] == "cliente":
                 
     
     elif opcao == "6":
-        print("\n===== AGENDA =====")
+        print("\n===== AGENDA DE RETIRADAS =====")
 
         datas_mostradas = []
 
@@ -183,6 +191,46 @@ while login[0] and login[1] == "cliente":
                     print(f" - {agendar_hora[j]}")
 
             datas_mostradas.append(agendar_data[i])
+
+    elif opcao == "7":
+        print ("=====FORMAS DE PAGAMENTO=====")
+        print ("1 - PIX (DESCONTO DE 5%)")
+        print ("2 - CARTÃO (JUROS DE 5%)")
+        print ("3 - BOLETO (JUROS DE 1%)")
+
+        opcao_pagamento = (input ("qual a forma de pagamento: "))
+
+        if opcao_pagamento == "1":
+            desconto = total_compra * 0.05
+            desconto_total = total_compra - desconto
+            print ("PIX: 183.238.244-36")
+            print (f"O DESCONTO FOI DE {desconto} E SUAS COMPRAS FICARAM EM: R${desconto_total}")
+            break
+            
+            
+        elif opcao_pagamento == "2":
+            cartao = (input ("qual numero do cartão: "))
+            cvc = int (input ("qual CVC do cartão: "))
+            validade = float (input ("qual a validade do cartão: "))
+            funcao = input ("credito ou debito: ")
+
+            for i in (len(cartao)):
+                if i > 12 or i < 12:
+                    print ("numero do cartão invalido")
+        
+            for i in (len(cvc)):
+                if i > 3 or i < 3:
+                    print ("numero do CVC invalido!")
+            
+            for i in (len(validade)):
+                if validade > 5 or validade < 5:
+                    print ("validade do cartão invalida!")
+
+
+            
+
+                    
+ 
 
     
     
