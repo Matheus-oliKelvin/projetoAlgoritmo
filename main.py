@@ -4,7 +4,7 @@ login=[False, None]
 animais=[]
 produtos=[]
 producao_leite = []
-estoque_raca=[]
+lotes=[]
 
 
 while not  login[0]:
@@ -115,39 +115,86 @@ while login[0] and login[1] == "adm":
              
     if opcao == 0:
         print("Saindo...")
+        login=[False, None]
         break
         
 
     elif opcao == 1:
-        tipo_animal= input("Qual o tipo do animal: ").lower()
-        raca_animal= input("Qual a raça do animal: ").lower()
-
+        
         while True:
-            identificacao = input("Digite a identificação desse animal: ").lower()
+            print("0- Cadastrar animal único")
+            print("1- Cadastrar por Lote")
 
-            ja_existe= False
+            opcao= int(input("Digite a opção desejada: "))
 
-            for animal in animais:
+            if opcao >=0 and opcao<=1:
+                break
+            else:
+                print("Opção invalida! Digite novamente\n")
 
-                if identificacao == animal[1]:
-                    print("Essa identificação já está cadastrada!Digite novamente\n")
-                    ja_existe= True
+        if opcao == 0:
+            tipo_animal= input("Qual o tipo do animal: ").lower()
+            raca_animal= input("Qual a raça do animal: ").lower()
+
+            while True:
+                identificacao = input("Digite a identificação desse animal: ").lower()
+
+                ja_existe= False
+
+                for animal in animais:
+
+                    if identificacao == animal[1]:
+                        print("Essa identificação já está cadastrada!Digite novamente\n")
+                        ja_existe= True
+                        break
+
+                if not ja_existe:
                     break
 
-            if not ja_existe:
-                break
+            while True:
+                status= input("Qual o status desse animal: ").lower()
 
-        while True:
-            status= input("Qual o status desse animal: ").lower()
+                if status not in ["a venda", "lactacao", "engorda", "gestacao", "postura"]:
+                    print("Status inválido! Digite novamente\n")
+                else:
+                    break
+            
+            print("\nAnimal cadastrado!")
+            animais.append([tipo_animal, identificacao, status, raca_animal])
 
-            if status not in ["a venda", "lactacao", "engorda", "gestacao", "postura"]:
-                print("Status inválido! Digite novamente\n")
-            else:
-                break
-        
-        print("\nAnimal cadastrado!")
-        animais.append([tipo_animal, identificacao, status, raca_animal])
- 
+        else:
+
+            while True:
+                nome_lote=input("Digite o nome desse lote: ")
+
+                ja_existe = False
+
+                for lote in lotes:
+                    if nome_lote == lote[0]:
+                        print("O nome desse lote já está cadastrado! Digite novamente\n")
+                        ja_existe = True
+                        break
+                
+                if not ja_existe:
+                    break
+
+            tipo_lote = input(f"Digite o tipo de animais do lote { nome_lote}: ")
+
+            raca_lote=input(f"Digite a raça dos animais do lote { nome_lote}: ")
+
+            while True:
+                status_lote= input(f"Digite o status dos animais do lote { nome_lote}: ").lower()
+
+                if status_lote not in ["a venda", "lactacao", "engorda", "gestacao", "postura"]:
+                    print("Status inválido! Digite novamente\n")
+                else:
+                    break
+
+            quantidade_lote = int(input(f"Digite a quantidade de animais do lote { nome_lote}:"))
+
+            lotes.append([nome_lote,tipo_lote,raca_lote ,status_lote,quantidade_lote])
+            print("\nLote cadastrado!")
+
 
     elif opcao == 2:
         identificacao_animal= input("Digite a identificação do animal que deseja buscar: ").lower()
@@ -228,12 +275,86 @@ while login[0] and login[1] == "adm":
         opcao = int(input("Digite a opção desejada: "))
 
         if opcao == 1:
+
+            contador = 0
+
             for animal in animais:
+
+                contador+=1
+
                 print("----------------------------")
                 print(f"{animal[0]} - {animal[1]}")
-                print(f"status: {animal[2]}")
-                print(f"raça: {animal[3]} ")
+                print(f"Status: {animal[2]}")
+                print(f"Raça: {animal[3]} ")
                 print("----------------------------")
+
+            
+            if contador == 0:
+               print("\nNão existe animais cadastrados no sistema!") 
+
+        elif opcao == 2:
+           status=input("Deseja ver o estoque de animais em que status?: ").lower()
+
+           contador = 0
+
+           for animal in animais:
+               
+               if animal[2] == status:
+
+                contador+=1
+
+                print("----------------------------")
+                print(f"{animal[0]} - {animal[1]}")
+                print(f"Status: {animal[2]}")
+                print(f"Raça: {animal[3]} ")
+                print("----------------------------")
+
+           if contador == 0:
+               print("\nNão existe animais com esse status no sistema!") 
+
+        elif opcao == 3:
+
+            contador = 0
+
+            for lote in lotes:
+
+                contador +=1
+
+                print("----------------------------")
+                print(f"Lote {lote[0]}")
+                print(f"{lote[4]} {lote[1]}")
+                print(f"Raça: {lote[2]} ")
+                print(f"Status: {lote[3]}")
+                print("----------------------------")
+
+            if contador == 0:
+               print("\nNão existe lotes no sistema!") 
+
+        elif opcao == 4:
+           tipo_animal=input("Deseja ver o estoque de qual tipo de animal: ").lower()
+
+           contador = 0
+
+           for animal in animais:
+               
+               if animal[0] == tipo_animal:
+
+                contador+=1
+
+                print("----------------------------")
+                print(f"{animal[0]} - {animal[1]}")
+                print(f"Status: {animal[2]}")
+                print(f"Raça: {animal[3]} ")
+                print("----------------------------")
+
+           if contador == 0:
+               print("\nNão existe animais com esse tipo no sistema!") 
+
+        else:
+            print("\nOpção inválida !")       
+
+           
+        
       
             
  
@@ -266,7 +387,7 @@ while login[0] and login[1] == "adm":
     elif opcao == 7:
 
         while True:
-           nome_produto = input("Digite o nome do produto: ")
+           nome_produto = input("Digite o nome do produto: ").lower()
            peso_produto = float(input("Digite o peso do produto: "))
            valor_produto = float(input("Digite o valor de venda (por kg) do produto: "))
 
@@ -278,8 +399,45 @@ while login[0] and login[1] == "adm":
 
            if continuar == 0:
                break
+           
 
+    elif opcao == 8:
+        print("Como você deseja visualizar o estoque dos produtos: ")
+        print(" 1 - Visualizar todos os produtos")
+        print(" 2 - Visualizar por tipo de produto")
+        
+        opcao = int(input("Digite a opção desejada: "))
 
+        if opcao == 1:
+            for produto in produtos:
+                print("----------------------------")
+                print(f"{produto[0]} ")
+                print(f"peso: {produto[1]}")
+                print(f"valor de venda ( por kg): {produto[2]} ")
+                print("----------------------------")
+
+        elif opcao == 2:
+           nome_produto=input("Qual o tipo de produto que você deseja ver o estoque?: ").lower()
+
+           contador =0
+
+           for produto in produtos:
+               
+               if produto[0] == nome_produto:
+
+                contador+=1
+
+                print("----------------------------")
+                print(f" {contador}. {produto[0]} ")
+                print(f"peso: {produto[1]}")
+                print(f"valor de venda ( por kg): {produto[2]} ")
+                print("----------------------------")
+
+           if contador == 0:
+               print("\nNão existe produtos desse tipo no estoque!")
+
+        else:
+            print("\nOpção inválida !")       
 
         
 
