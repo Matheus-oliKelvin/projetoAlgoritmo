@@ -1,5 +1,5 @@
 
-usuarios= [["1","1","adm"]]
+usuarios= []
 login=[False, None]
 animais=[]
 produtos=[]
