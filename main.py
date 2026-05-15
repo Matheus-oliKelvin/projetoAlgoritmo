@@ -103,7 +103,7 @@ while login[0] and login[1] == "adm":
         print("6- Registrar produção de leite")
         print("7- Adicionar produtos fabricados")
         print("8- Visualizar estoque de produtos")
-        print("9- ###########")
+        print("9- Analisar produtividade ( com @ )")
         print("0- Sair")
         
         opcao= int(input(" digite a opção : "))
@@ -437,9 +437,55 @@ while login[0] and login[1] == "adm":
                print("\nNão existe produtos desse tipo no estoque!")
 
         else:
-            print("\nOpção inválida !")       
+            print("\nOpção inválida !")  
 
+    elif opcao == 9:
+        hectares = float(input("Você tem quantos hectares na sua fazenda?: "))
+        quantidade_animais= int(input("Você tem quantos animais na sua fazenda?: "))
+        peso_inicial = float(input("No começo do ano qual era o peso médio dos seus animais?: (em kg) "))
+        peso_final = float(input("No final do ano qual era o peso médio dos seus animais?: (em kg) "))
+
+        ganho_por_animal= peso_final - peso_inicial
+
+        ganho_peso_total = quantidade_animais * ganho_por_animal
+
+        arroba_total = ganho_peso_total / 15.0
+
+        arroba_por_hectare_anual = round(arroba_total/ hectares, 2)
+
+        print(f"Seu @ por hectare nesse ano foi de : {arroba_por_hectare_anual}")
+
+        if arroba_por_hectare_anual <= 8.0:
+            print("\nSua produtividade está INEFICIENTE!")
+
+        elif arroba_por_hectare_anual <= 12.0:
+            print("\nSua produtividade está na MÉDIA NACIONAL!")
+
+        elif arroba_por_hectare_anual <= 18.0:
+            print("\nSua produtividade está BOA!")
+
+        elif arroba_por_hectare_anual <= 25.0:
+            print("\nSua produtividade está EXCELENTE!")
         
+        else:
+            print("\nSua produtividade está EXCEPCIONAL!")
 
+        if valor_arroba > 0:
+            opcao = int(input("Deseja ver o valor de @ produzido ? (1-sim) (0-não) : ")) 
 
+            if opcao == 1 :
+                alimentacao_gastos = float(input("Quanto você gasta com alimentação?: "))
+                controle_doencas_gastos = float(input("Quanto você gasta com para evitar e tratar doenças?: "))
+                funcionarios_gastos = float(input("Quanto você gasta com os funcionários da sua fazenda?: "))
+                infraestrutura_gastos = float(input("Quanto você gasta com a infraestrutura da sua fazenda?: "))
+
+                custos = alimentacao_gastos + controle_doencas_gastos + funcionarios_gastos + infraestrutura_gastos
+
+                valor_arroba = round(custos / arroba_total, 2)
+
+                print(f"Você está produzindo {valor_arroba} R$ por arroba!")
+
+             
+
+    
 
