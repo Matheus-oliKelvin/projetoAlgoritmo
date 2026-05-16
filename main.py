@@ -1,8 +1,29 @@
-produtos = [["leite", 10, 20], ["queijo", 20, 10], ["soja", 5, 10]]
-animais = [["vaca", 1000, 5, "nelore"], ["leitão", 300, 5, "piau"], ["ovelha", 350, 5, "dorper"]]
+produtos = [
+    ["leite", 10, 20],
+    ["queijo", 20, 10],
+    ["soja", 5, 10],
+    ["milho", 8, 30],
+    ["ovos", 12, 40],
+    ["mel", 25, 15]
+]
 
+animais = [
+    ["vaca", 1000, 5, "nelore"],
+    ["leitão", 300, 5, "piau"],
+    ["ovelha", 350, 5, "dorper"],
+    ["galinha", 50, 20, "caipira"],
+    ["cabra", 280, 8, "saanen"],
+    ["boi", 1800, 4, "angus"]
+]
+
+lotes = [
+    [1, "vaca nelore", 20, 2000, "a venda"],
+    [2, "galinha caipira", 30, 1200, "a venda"],
+    [3, "ovelha dorper", 10, 3000, "a venda"],
+    [4, "boi angus", 5, 8000, "em gestacao"]
+]
 total_compra = 0
-carrinho = [["leite", 2]]
+carrinho = []
 
 usuarios = [["a", "a", "cliente"]]
 login = [False, None]
@@ -99,7 +120,8 @@ while login[0] and login[1] == "cliente":
     print("4 - Ver resumo das compras")
     print("5 - Agendar retirada")
     print("6 - Consultar agenda")
-    print("7 - Finalizar pagamento")
+    print("7 - comprar lotes")
+    print("8 - Finalizar pagamento")
     print("0 - Encerrar sessão")
     
     opcao = input("digite uma opção: ")
@@ -153,6 +175,7 @@ while login[0] and login[1] == "cliente":
                         valor = animal[1] * quantidade
                         total_compra += valor
                         print(f"o valor da compra foi de: R$ {valor}")
+                        carrinho.append([compra, quantidade])
                     else:
                         print("estoque insuficiente!")
                     break
@@ -162,13 +185,14 @@ while login[0] and login[1] == "cliente":
 
     
     elif opcao == "4":
-        print (f"o valor das compras estão em: R${total_compra}")
+        print (f"o valor das compras est?o em: R${total_compra}")
 
-        for carrin in carrinho:
-            print(f"compras: {carrin[0]} - {carrin[1]}\n")
-    
-    
-    
+        if len(carrinho) == 0:
+            print("nenhuma compra realizada")
+        else:
+            for carrin in carrinho:
+                print(f"compras: {carrin[0]} - {carrin[1]}\n")
+
     elif opcao == "5":
 
         data = input("qual a data (ex: 12.04): ").strip()
@@ -205,7 +229,7 @@ while login[0] and login[1] == "cliente":
 
         for i in range(len(agendar_data)):
             if agendar_data[i] not in datas_mostradas:
-                print(f"\n{agendar_data[i]}:")
+                print(f"{agendar_data[i]}:")
 
             for j in range(len(agendar_data)):
                 if agendar_data[j] == agendar_data[i]:
@@ -214,10 +238,30 @@ while login[0] and login[1] == "cliente":
             datas_mostradas.append(agendar_data[i])
 
     elif opcao == "7":
+        for lote in lotes:
+            print("identificacao:", lote[0])
+            print("lote:", lote[1])
+            print("quantidade:", lote[2])
+            print("valor:", lote[3])
+            print("status:", lote[4])
+            print()
+
+        identificacao = int(input("qual o lote que deseja comprar diga a numeraçao? "))
+
+        for lote in lotes:
+            if identificacao == lote[0]:
+                if lote[4] == "a venda":
+                    total_compra += lote[3]
+                    lote[4] = "vendido"
+                    carrinho.append([lote[1], lote[2]])
+                    print("lote comprado com sucesso!")
+                else:
+                    print("esse lote nao esta disponivel")
+
+    elif opcao == "8":
         print ("=====FORMAS DE PAGAMENTO=====")
         print ("1 - PIX (DESCONTO DE 5%)")
         print ("2 - CARTÃO (JUROS DE 5%)")
-        print ("3 - BOLETO (JUROS DE 1%)")
 
         opcao_pagamento = (input ("qual a forma de pagamento: "))
 
@@ -260,35 +304,6 @@ while login[0] and login[1] == "cliente":
                     print(f"Pagamento aprovado! No valor de {desconto_total_cartao} e o juros cobrado foi de {desconto2}" )
                     break
 
-            
-
-                    
- 
-
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+        elif opcao == "0":
+            print ("saindo...")
+            break
