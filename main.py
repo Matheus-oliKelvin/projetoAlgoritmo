@@ -223,7 +223,7 @@ while login[0] and login[1] == "adm":
             if  identificacao_animal == animal[1]:
                 print(animal[0], "encontrado! Status: ", animal[2])
                   
-            if status == "a venda":
+            if animal[2] == "a venda":
                 print("Preço:", animal[4], "$")
 
                 encontrado=True
@@ -309,7 +309,7 @@ while login[0] and login[1] == "adm":
                 print(f"Status: {animal[2]}")
                 print(f"Raça: {animal[3]} ")
                   
-                if status == "a venda":
+                if animal[2] == "a venda":
                     print(f"Preço:  {animal[4]} $")
 
                 print("----------------------------")
@@ -333,7 +333,7 @@ while login[0] and login[1] == "adm":
                 print(f"{animal[0]} - {animal[1]}")
                 print(f"Status: {animal[2]}")
                 print(f"Raça: {animal[3]} ")
-                if status == "a venda":
+                if animal[2] == "a venda":
                     print(f"Preço:  {animal[4]} $")
 
                 print("----------------------------")
@@ -375,7 +375,7 @@ while login[0] and login[1] == "adm":
                 print(f"{animal[0]} - {animal[1]}")
                 print(f"Status: {animal[2]}")
                 print(f"Raça: {animal[3]} ")
-                if status == "a venda":
+                if animal[2] == "a venda":
                     print(f"Preço:  {animal[4]} $")
 
                 print("----------------------------")
