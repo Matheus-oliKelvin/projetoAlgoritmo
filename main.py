@@ -1,3 +1,14 @@
+produtos = [["leite", 10, 20], ["queijo", 20, 10], ["soja", 5, 10]]
+animais = [["vaca", 1000, 5, "nelore"], ["leitão", 300, 5, "piau"], ["ovelha", 350, 5, "dorper"]]
+
+total_compra = 0
+carrinho = [["leite", 2]]
+
+usuarios = [["a", "a", "cliente"]]
+login = [False, None]
+
+agendar_data = ["10.04"]
+agendar_hora = ["12.22"]
 
 usuarios= []
 login=[False, None]
@@ -12,7 +23,7 @@ while not  login[0]:
     while True:
         print("Selecione a opção desejada: ")
         print("1- Login") 
-        print("2- Cadastra-se  ")
+        print("2- Cadastra-se")
         print("0- Sair")
 
         opcao= int(input("Digite a opção : "))
@@ -21,7 +32,6 @@ while not  login[0]:
             break
         else:
             print("Opção invalida! Digite novamente\n")
-
 
     if opcao == 0:
         print("Saindo...")
@@ -33,8 +43,7 @@ while not  login[0]:
         senha= input("Digite sua senha: ")
         tipo= input("Deseja entrar como (cliente) ou (adm)?: ").lower()
 
-       
-        encontrou= False
+        encontrou = False
 
         for usuario in usuarios:
             if email == usuario[0] and senha == usuario[1] and tipo == usuario[2]:
@@ -46,7 +55,6 @@ while not  login[0]:
 
         if not encontrou:
             print("Credenciais incorretas!\n ")
-
 
     elif opcao == 2:
 
@@ -489,3 +497,205 @@ while login[0] and login[1] == "adm":
 
     
 
+while login[0] and login[1] == "cliente":
+    print ("=====MENU CLIENTE======\n")
+    
+    print("1 - Consultar produtos")
+    print("2 - Consultar animais")
+    print("3 - Realizar compra")
+    print("4 - Ver resumo das compras")
+    print("5 - Agendar retirada")
+    print("6 - Consultar agenda")
+    print("7 - Finalizar pagamento")
+    print("0 - Encerrar sessão")
+    
+    opcao = input("digite uma opção: ")
+
+    if opcao == "1":
+        for produto in produtos:
+            print ("Nome:", produto[0]) 
+            print ("Preço:", produto[1],"$") 
+            print ("Estoque:", produto[2], "em estoque") 
+            print ("\n")
+    
+    elif opcao == "2":
+        for animal in animais:
+            print ("Animal:", animal[0]) 
+            print ("Preço:", animal[1],"$") 
+            print ("Estoque:", animal[2], "em estoque") 
+            print ("Raça:", animal[3])
+            print ("\n")
+    
+    elif opcao == "3":
+        compra = input("O que deseja comprar: ").lower().strip()
+        
+        encontrado = False
+
+        for produto in produtos:
+            if compra == produto[0]:
+                encontrado = True
+                quantidade = int(input("diga a quantidade que deseja comprar: "))
+
+                if produto[2] >= quantidade:
+                    produto[2] -= quantidade
+                    valor = produto[1] * quantidade
+                    total_compra += valor
+                    print(f"o valor da compra foi de: R$ {valor}")
+
+                    carrinho.append ([compra, quantidade])
+                    
+                
+                else:
+                    print("estoque insuficiente!")
+                break
+
+        if not encontrado:
+            for animal in animais:
+                if compra == animal[0]:
+                    encontrado = True
+                    quantidade = int(input("diga a quantidade que deseja comprar: "))
+
+                    if animal[2] >= quantidade:
+                        animal[2] -= quantidade
+                        valor = animal[1] * quantidade
+                        total_compra += valor
+                        print(f"o valor da compra foi de: R$ {valor}")
+                    else:
+                        print("estoque insuficiente!")
+                    break
+
+        if not encontrado:
+            print("Não encontrado")
+
+    
+    elif opcao == "4":
+        print (f"o valor das compras estão em: R${total_compra}")
+
+        for carrin in carrinho:
+            print(f"compras: {carrin[0]} - {carrin[1]}\n")
+    
+    
+    
+    elif opcao == "5":
+
+        data = input("qual a data (ex: 12.04): ").strip()
+        hora = input("qual a hora (ex: 15:30): ").strip()
+
+        print("\n")
+
+        dia = int(data[0:2])
+        mes = int(data[3:5])
+
+        horas = int(hora[0:2])
+        minutos = int(hora[3:5])
+
+        if dia < 1 or dia > 31 or mes < 1 or mes > 12:
+            print("data invalida")
+
+        elif horas < 0 or horas > 23 or minutos < 0 or minutos > 59:
+            print("hora invalida")
+
+        elif data in agendar_data and hora in agendar_hora:
+            print("Data e hora já estão ocupadas!")
+
+        else:
+            agendar_data.append(data)
+            agendar_hora.append(hora)
+
+            print(f"Agendado para {data} às {hora}")
+                
+    
+    elif opcao == "6":
+        print("\n===== AGENDA DE RETIRADAS =====")
+
+        datas_mostradas = []
+
+        for i in range(len(agendar_data)):
+            if agendar_data[i] not in datas_mostradas:
+                print(f"\n{agendar_data[i]}:")
+
+            for j in range(len(agendar_data)):
+                if agendar_data[j] == agendar_data[i]:
+                    print(f" - {agendar_hora[j]}")
+
+            datas_mostradas.append(agendar_data[i])
+
+    elif opcao == "7":
+        print ("=====FORMAS DE PAGAMENTO=====")
+        print ("1 - PIX (DESCONTO DE 5%)")
+        print ("2 - CARTÃO (JUROS DE 5%)")
+        print ("3 - BOLETO (JUROS DE 1%)")
+
+        opcao_pagamento = (input ("qual a forma de pagamento: "))
+
+        if opcao_pagamento == "1":
+            desconto = total_compra * 0.05
+            desconto_total_pix = total_compra - desconto
+            print ("PIX: 183.238.244-36")
+            print (f"O DESCONTO FOI DE {desconto} E SUAS COMPRAS FICARAM EM: R${desconto_total_pix}")
+            
+        elif opcao_pagamento == "2":
+            cartao = input("numero do cartão: ").replace(" ", "")
+            cvc = input("CVC: ")
+            validade = input("validade (MM/AA): ")
+        
+            desconto2 = total_compra * 0.05
+            desconto_total_cartao = total_compra + desconto2
+
+            if len(cartao) != 16 or not cartao.isdigit():
+                print("cartão invalido")
+
+            elif len(cvc) != 3:
+                print("CVC invalido")
+
+            if len(validade) != 5 or validade[2] != "/":
+                print("formato inválido!")
+            else:
+                dia = int(validade[0:2])
+                mes = int(validade[3:5])
+
+                if dia < 1 or dia > 31:
+                    print ("dia invalido!")
+                
+                if mes < 1 or mes > 12:
+                    print("mês inválido!")
+                
+                
+
+                else:
+                    print ("\n")
+                    print(f"Pagamento aprovado! No valor de {desconto_total_cartao} e o juros cobrado foi de {desconto2}" )
+                    break
+
+            
+
+                    
+ 
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
