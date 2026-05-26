@@ -1,4 +1,6 @@
 
+import defs.adm, defs.cliente, defs.geral
+
 total_compra = 0
 carrinho = []
 
