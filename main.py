@@ -1,19 +1,6 @@
 
-animais = [
-    ["vaca", 1000, 5, "nelore"],
-    ["leitão", 300, 5, "piau"],
-    ["ovelha", 350, 5, "dorper"],
-    ["galinha", 50, 20, "caipira"],
-    ["cabra", 280, 8, "saanen"],
-    ["boi", 1800, 4, "angus"]
-]
+import defs.adm, defs.cliente, defs.geral
 
-lotes = [
-    [1, "vaca nelore", 20, 2000, "a venda"],
-    [2, "galinha caipira", 30, 1200, "a venda"],
-    [3, "ovelha dorper", 10, 3000, "a venda"],
-    [4, "boi angus", 5, 8000, "em gestacao"]
-]
 total_compra = 0
 carrinho = []
 
