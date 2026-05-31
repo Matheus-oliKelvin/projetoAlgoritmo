@@ -1,0 +1,22 @@
+{
+    "leticia@gmail.com": {
+        "senha": "111",
+        "tipo_usuario": "cliente"
+    },
+    "a@gmail.com": {
+        "senha": "123",
+        "tipo_usuario": "adm"
+    },
+    "aluno@gmail.com": {
+        "senha": "98187",
+        "tipo_usuario": "cliente"
+    },
+    "matheus@gmail.com": {
+        "senha": "123",
+        "tipo_usuario": "adm"
+    },
+    "vitoria@gmail.com": {
+        "senha": "12",
+        "tipo_usuario": "cliente"
+    }
+}

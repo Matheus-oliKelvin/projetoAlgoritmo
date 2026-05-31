@@ -1,0 +1,171 @@
+{
+    "01": {
+        "especie": "bovino",
+        "raca": "nelore",
+        "historico_peso": [
+            {
+                "peso": 80.0,
+                "data": "2026-05-28"
+            }
+        ],
+        "status": "a venda",
+        "preco": 50.5,
+        "lote": null
+    },
+    "02": {
+        "especie": "bovino",
+        "raca": "nelore",
+        "peso": [
+            {
+                "peso": 90.0,
+                "data": "2026-05-28"
+            }
+        ],
+        "status": "lactacao",
+        "preco": null,
+        "lote ": null
+    },
+    "0Lote A-2026": {
+        "especie": "bovino",
+        "raca": "nelore",
+        "peso": [
+            {
+                "peso": 78.0,
+                "data": "2026-05-29"
+            }
+        ],
+        "status": "engorda",
+        "preco": null,
+        "lote": "Lote A-2026"
+    },
+    "1Lote A-2026": {
+        "especie": "bovino",
+        "raca": "nelore",
+        "peso": [
+            {
+                "peso": 78.0,
+                "data": "2026-05-29"
+            }
+        ],
+        "status": "engorda",
+        "preco": null,
+        "lote": "Lote A-2026"
+    },
+    "2Lote A-2026": {
+        "especie": "bovino",
+        "raca": "nelore",
+        "peso": [
+            {
+                "peso": 78.0,
+                "data": "2026-05-29"
+            }
+        ],
+        "status": "engorda",
+        "preco": null,
+        "lote": "Lote A-2026"
+    },
+    "3Lote A-2026": {
+        "especie": "bovino",
+        "raca": "nelore",
+        "peso": [
+            {
+                "peso": 78.0,
+                "data": "2026-05-29"
+            }
+        ],
+        "status": "engorda",
+        "preco": null,
+        "lote": "Lote A-2026"
+    },
+    "4Lote A-2026": {
+        "especie": "bovino",
+        "raca": "nelore",
+        "peso": [
+            {
+                "peso": 78.0,
+                "data": "2026-05-29"
+            }
+        ],
+        "status": "engorda",
+        "preco": null,
+        "lote": "Lote A-2026"
+    },
+    "5Lote A-2026": {
+        "especie": "bovino",
+        "raca": "nelore",
+        "peso": [
+            {
+                "peso": 78.0,
+                "data": "2026-05-29"
+            }
+        ],
+        "status": "engorda",
+        "preco": null,
+        "lote": "Lote A-2026"
+    },
+    "6Lote A-2026": {
+        "especie": "bovino",
+        "raca": "nelore",
+        "peso": [
+            {
+                "peso": 78.0,
+                "data": "2026-05-29"
+            }
+        ],
+        "status": "engorda",
+        "preco": null,
+        "lote": "Lote A-2026"
+    },
+    "7Lote A-2026": {
+        "especie": "bovino",
+        "raca": "nelore",
+        "peso": [
+            {
+                "peso": 78.0,
+                "data": "2026-05-29"
+            }
+        ],
+        "status": "engorda",
+        "preco": null,
+        "lote": "Lote A-2026"
+    },
+    "8Lote A-2026": {
+        "especie": "bovino",
+        "raca": "nelore",
+        "peso": [
+            {
+                "peso": 78.0,
+                "data": "2026-05-29"
+            }
+        ],
+        "status": "engorda",
+        "preco": null,
+        "lote": "Lote A-2026"
+    },
+    "9Lote A-2026": {
+        "especie": "bovino",
+        "raca": "nelore",
+        "peso": [
+            {
+                "peso": 78.0,
+                "data": "2026-05-29"
+            }
+        ],
+        "status": "engorda",
+        "preco": null,
+        "lote": "Lote A-2026"
+    },
+    "05": {
+        "especie": "cabrino",
+        "raca": "bee",
+        "historico_peso": [
+            {
+                "peso": 60.0,
+                "data": "2026-05-29"
+            }
+        ],
+        "status": "a venda",
+        "preco": 50.0,
+        "lote ": null
+    }
+}

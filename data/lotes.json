@@ -1,0 +1,16 @@
+{
+    "Lote A-2026": {
+        "especie": "bovino",
+        "raca": "nelore",
+        "quantidade": 10,
+        "peso": [
+            {
+                "peso": 78.0,
+                "data": "2026-05-29"
+            }
+        ],
+        "status": "engorda",
+        "preco": null
+    }
+   
+}
