@@ -4,8 +4,7 @@ import defs.adm, defs.cliente, defs.geral
 total_compra = 0
 carrinho = []
 
-agendar_data = []
-agendar_hora = []
+agenda_retiradas = {}
 
 usuarios= []
 
@@ -13,7 +12,7 @@ login=[False, None]
 
 animais=[]
 
-produtos=[]
+produtos=[["leite", 5, 10]]
 
 producao_leite = []
 
@@ -53,7 +52,7 @@ while True:
                 if email == usuario[0] and senha == usuario[1] and tipo == usuario[2]:
                     print("Seja bem-vindo(a) !")
                     print("---------------------------------------------")
-                    login=[True,tipo]
+                    login=[True,tipo,email]
                     encontrou=True
                     break
 
@@ -526,318 +525,38 @@ while True:
 
     elif login[0] and login[1] == "cliente":
 
-        print("=====MENU CLIENTE======\n")
-        
-        print("1 - Consultar produtos")
-        print("2 - Consultar animais")
-        print("3 - Consultar lotes")
-        print("4 - Comprar produtos")
-        print("5 - Comprar animais")
-        print("6 - Comprar lotes")
-        print("7 - Ver resumo das compras")
-        print("8 - Agendar retirada")
-        print("9 - Consultar agenda de retiradas")
-        print("10  - Finalizar pagamento")
-        print("0 - Encerrar sessão")
-        
-        while True:
-            opcao = int(input("digite uma opção: "))
-            
-            if opcao >=0 and opcao<=10:
-                break
-            else:
-                print("Opção invalida! Digite novamente\n")
-
+        opcao = defs.cliente.mostrar_menu_cliente()
 
         if opcao == 0:
             print("Saindo...")
-            
             login=[False, None]
-   
-
-    
 
         elif opcao == 1:
-            for produto in produtos:
-
-                print ("Nome:", produto[0]) 
-                print ("Quantidade:", produto[1],"kg em estoque") 
-                print ("Valor:", produto[2], "$\n") 
-
-        
+            defs.cliente.consultar_produtos(produtos)
 
         elif opcao == 2:
-            for animal in animais:
-
-                if animal[2] == "a venda":
-
-                    print ("Animal: ", animal[0]) 
-                    print ("Raça: ", animal[3])
-                    print("Preço: ", animal[4],"\n")
-
+            defs.cliente.consultar_animais(animais)
 
         elif opcao == 3:
-
-            for lote in lotes:
-
-                print ("Nome do lote: ", lote[0]) 
-                print("Animais do lote: ", lote[1])
-                print("Raça dos animais: ", lote[2])
-                print("Status dos animais: ", lote[3])
-                print ("Quantidade:", lote[4],"animais") 
-                print ("Valor:",  lote[5], "$\n") 
-            
-
+            defs.cliente.consultar_lotes(lotes)
 
         elif opcao == 4:
-            compra = input("Qual produto deseja comprar: ").lower()
-            
-            encontrado = False
-
-            for produto in produtos:
-                
-                if compra == produto[0]:
-
-                    encontrado = True
-
-                    quantidade = int(input(f"Digite quantos kilos de {compra} você  deseja comprar: "))
-
-                    if produto[1] >= quantidade:
-                        produto[1] -= quantidade
-                        valor = produto[2] * quantidade
-                        total_compra += valor
-                        print(f"o valor da compra foi de: R$ {valor}")
-
-                        carrinho.append ([compra, quantidade])
-                        
-                    else:
-                        print("estoque insuficiente!")
-                    break
-
+            total_compra = defs.cliente.comprar_produto(produtos, carrinho, total_compra)
 
         elif opcao == 5:
-            compra = input("Qual animal deseja comprar: ").lower()
-
-            encontrado= False
-
-            identificacoes = []
-
-            for animal in animais:
-
-                if animal[0] == compra and animal[2] == "a venda":
-                    encontrado = True
-
-                    identificacoes.append(animal[1])
-
-
-            if encontrado:
-                print(f"Foram encontrados {len(identificacoes)} animais desse tipo: ")
-
-                index = -1
-                for animal in animais:
-
-                    index+=1
-
-                    if animal[1] in identificacoes:     
-
-                        print("----------------------------")
-                        print(f"{index} - {animal[0]} ")
-                        print(f"Status: {animal[2]}")
-                        print(f"Raça: {animal[3]} ")
-                        print(f"Preço:  {animal[4]} $")
-                        print("----------------------------")
-
-                animal_comprado= int(input("Digite o numero do animal que deseja comprar "))
-
-                animais[animal_comprado] [2] = "vendido"
-
-                valor = animais[animal_comprado] [4]
-                total_compra += valor
-
-                carrinho.append([compra, 1])
-
-                print(f"o valor da compra foi de: R$ {valor}")
-
+            total_compra = defs.cliente.comprar_animal(animais, carrinho, total_compra)
 
         elif opcao == 6:
-            compra = input("Qual lote deseja comprar: ").lower()
-            
-            encontrado = False
-
-            for lote in lotes:
-                
-                if compra == lote[0]:
-
-                    encontrado = True
-
-                    valor = lote[5]
-
-                    total_compra += valor
-
-                    print(f"o valor da compra foi de: R$ {valor}")
-
-                    carrinho.append ([compra, 1])
-                        
-                    break
+            total_compra = defs.cliente.comprar_lote(lotes, carrinho, total_compra)
         
         elif opcao == 7:
-            print (f"o valor das compras estão em: R${total_compra}")
-
-            for compra in carrinho:
-                print(f"compras: {compra[0]} - {compra[1]}\n")
-        
-        
+            defs.cliente.ver_resumo_compras(carrinho, total_compra)
         
         elif opcao == 8:
-
-            data = input("qual a data (ex: 12/04): ").lower()
-            hora = input("qual a hora (ex: 15:30):").lower()
-
-                    
-            if len(data) != 5 or data[2] != "/":
-                print("Formato de data inválido!")
-
-            elif len(hora) != 5 or hora[2] != ":":
-                print("Formato de hora inválido!")
-
-            else:
-
-                dia = int(data[0] + data[1])
-
-                mes = int(data[3] + data[4])
-
-                horas = int(hora[0] + hora[1])
-
-                minutos = int(hora[3] + hora[4])
-
-                if dia < 1 or dia > 31 or mes < 1 or mes > 12:
-                    print("Data inválida!")
-
-                elif horas < 0 or horas > 23 or minutos < 0 or minutos > 59:
-                    print("Hora inválida!")
-
-                elif data in agendar_data and hora in agendar_hora:
-                    print("Data e hora já estão ocupadas!")
-
-                else:
-
-                    agendar_data.append(data)
-                    agendar_hora.append(hora)
-
-                    print(f"Agendado para {dia}/{mes} às {horas}:{minutos}")
-            
-                    
+            defs.cliente.agendar_retirada(agenda_retiradas, carrinho, total_compra, login)
         
         elif opcao == 9:
-            print("\n===== AGENDA DE RETIRADAS =====")
-
-            datas_mostradas = []
-
-            for i in range(len(agendar_data)):
-                if agendar_data[i] not in datas_mostradas:
-                    print(f"\n{agendar_data[i]}:")
-
-                for j in range(len(agendar_data)):
-                    if agendar_data[j] == agendar_data[i]:
-                        print(f" - {agendar_hora[j]}")
-
-                datas_mostradas.append(agendar_data[i])
-
+            defs.cliente.consultar_agenda_retiradas(agenda_retiradas)
 
         elif opcao == 10:
-
-            print("===== FORMAS DE PAGAMENTO =====")
-
-            print("1 - PIX (DESCONTO DE 5%)")
-            print("2 - CARTÃO (JUROS DE 5%)")
-            print("3 - BOLETO (JUROS DE 1%)")
-
-            opcao_pagamento = input("Qual a forma de pagamento: ")
-
-            if opcao_pagamento == "1":
-
-                desconto = total_compra * 0.05
-
-                total_pix = total_compra - desconto
-
-                print("PIX: 183.238.244-36")
-
-                print(f"O desconto foi de R$ {desconto}")
-
-                print(f"Valor final: R$ {total_pix}")
-
-            elif opcao_pagamento == "2":
-
-                cartao = input("Número do cartão: ")
-
-                cvc = input("CVC: ")
-
-                validade = input("Validade (MM/AA): ")
-
-                juros = total_compra * 0.05
-
-                total_cartao = total_compra + juros
-
-                if len(cartao) != 16:
-
-                    print("Cartão inválido!")
-
-                elif len(cvc) != 3:
-
-                    print("CVC inválido!")
-
-                elif len(validade) != 5:
-
-                    print("Formato da validade inválido!")
-
-                else:
-
-                    print(f"Pagamento aprovado!")
-
-                    print(f"Juros cobrados: R$ {juros}")
-
-                    print(f"Valor final: R$ {total_cartao}")
-
-            elif opcao_pagamento == "3":
-
-                juros = total_compra * 0.01
-
-                total_boleto = total_compra + juros
-
-                print("Boleto gerado com sucesso!")
-
-                print(f"Juros cobrados: R$ {juros}")
-
-                print(f"Valor final: R$ {total_boleto}")
-
-            else:
-
-                print("Opção inválida!")
-                
-
-                    
-
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+            defs.cliente.finalizar_pagamento(total_compra)
