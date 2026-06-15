@@ -3,6 +3,7 @@ import utils.adm, utils.cliente, utils.geral
 
 
 
+
 login = {
     "logado": False,
     "usuario": None,
@@ -18,6 +19,9 @@ despesas=utils.geral.carregar_dados("despesas")
 historico_arroba= utils.geral.carregar_dados("historico_arroba")
 
 
+carinho=[]
+total_compra=0
+agenda_retiradas = {}
 
 
 while True:
@@ -31,25 +35,12 @@ while True:
         utils.adm.mostrar_menu_adm(animais,lotes,login,producao_leite,produtos,despesas,historico_arroba)
         
 
+    
 
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+        
+
+    elif login["tipo_usuario"] == "cliente":
+
+        utils.cliente.mostrar_menu_cliente(animais,lotes,produtos,total_compra,usuarios,agenda_retiradas)
+
+      

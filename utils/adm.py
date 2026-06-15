@@ -881,9 +881,8 @@ def mostrar_menu_adm(animais: dict, lotes: dict, login: dict, producao_leite: di
     8- Visualizar estoque de produtos
     9- Analisar produtividade ( com @ )
     10- Visualizar relatório geral da fazenda
-    11- Visualizar histórico de modificações
-    12- Atualizar despesas
-    13- Visualizar valor de @ produzido
+    11- Atualizar despesas
+    12- Visualizar valor de @ produzido
     0- Deslogar
     """
 
@@ -892,7 +891,7 @@ def mostrar_menu_adm(animais: dict, lotes: dict, login: dict, producao_leite: di
 
         opcao= int(input(" >  "))
 
-        if validar_opcao(opcao, 0 , 13):
+        if validar_opcao(opcao, 0 , 12):
             break
         else:
             print(" [yellow] Opção invalida! Digite novamente [/yellow] \n")
