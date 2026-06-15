@@ -1,0 +1,23 @@
+[
+    
+    {
+        "ano": 2022,
+        "arroba_por_hectare": 0.5
+    },
+    {
+        "ano": 2023,
+        "arroba_por_hectare": 5.0
+    },
+    {
+        "ano": 2024,
+        "arroba_por_hectare": 10.0
+    },
+    {
+        "ano": 2025,
+        "arroba_por_hectare": 15.0
+    },
+    {
+        "ano": 2026,
+        "arroba_por_hectare": 20.0
+    }
+]

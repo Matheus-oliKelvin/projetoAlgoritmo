@@ -1,171 +1,2502 @@
 {
-    "01": {
+    "01 - engorda-2022": {
         "especie": "bovino",
         "raca": "nelore",
         "historico_peso": [
             {
-                "peso": 80.0,
-                "data": "2026-05-28"
-            }
-        ],
-        "status": "a venda",
-        "preco": 50.5,
-        "lote": null
-    },
-    "02": {
-        "especie": "bovino",
-        "raca": "nelore",
-        "peso": [
+                "peso": 250.0,
+                "data": "2022-01-15"
+            },
             {
-                "peso": 90.0,
-                "data": "2026-05-28"
-            }
-        ],
-        "status": "lactacao",
-        "preco": null,
-        "lote ": null
-    },
-    "0Lote A-2026": {
-        "especie": "bovino",
-        "raca": "nelore",
-        "peso": [
+                "peso": 361.5,
+                "data": "2022-12-15"
+            },
             {
-                "peso": 78.0,
-                "data": "2026-05-29"
+                "peso": 723.0,
+                "data": "2023-01-15"
+            },
+            {
+                "peso": 1.084,
+                "data": "2023-12-15"
+            },
+            {
+                "peso": 250.0,
+                "data": "2024-01-15"
+            },
+            {
+                "peso": 1084.5,
+                "data": "2024-12-15"
             }
         ],
         "status": "engorda",
         "preco": null,
-        "lote": "Lote A-2026"
+        "lote": "engorda-2022"
     },
-    "1Lote A-2026": {
+    "02 - engorda-2022": {
         "especie": "bovino",
         "raca": "nelore",
-        "peso": [
-            {
-                "peso": 78.0,
-                "data": "2026-05-29"
-            }
-        ],
-        "status": "engorda",
-        "preco": null,
-        "lote": "Lote A-2026"
-    },
-    "2Lote A-2026": {
-        "especie": "bovino",
-        "raca": "nelore",
-        "peso": [
-            {
-                "peso": 78.0,
-                "data": "2026-05-29"
-            }
-        ],
-        "status": "engorda",
-        "preco": null,
-        "lote": "Lote A-2026"
-    },
-    "3Lote A-2026": {
-        "especie": "bovino",
-        "raca": "nelore",
-        "peso": [
-            {
-                "peso": 78.0,
-                "data": "2026-05-29"
-            }
-        ],
-        "status": "engorda",
-        "preco": null,
-        "lote": "Lote A-2026"
-    },
-    "4Lote A-2026": {
-        "especie": "bovino",
-        "raca": "nelore",
-        "peso": [
-            {
-                "peso": 78.0,
-                "data": "2026-05-29"
-            }
-        ],
-        "status": "engorda",
-        "preco": null,
-        "lote": "Lote A-2026"
-    },
-    "5Lote A-2026": {
-        "especie": "bovino",
-        "raca": "nelore",
-        "peso": [
-            {
-                "peso": 78.0,
-                "data": "2026-05-29"
-            }
-        ],
-        "status": "engorda",
-        "preco": null,
-        "lote": "Lote A-2026"
-    },
-    "6Lote A-2026": {
-        "especie": "bovino",
-        "raca": "nelore",
-        "peso": [
-            {
-                "peso": 78.0,
-                "data": "2026-05-29"
-            }
-        ],
-        "status": "engorda",
-        "preco": null,
-        "lote": "Lote A-2026"
-    },
-    "7Lote A-2026": {
-        "especie": "bovino",
-        "raca": "nelore",
-        "peso": [
-            {
-                "peso": 78.0,
-                "data": "2026-05-29"
-            }
-        ],
-        "status": "engorda",
-        "preco": null,
-        "lote": "Lote A-2026"
-    },
-    "8Lote A-2026": {
-        "especie": "bovino",
-        "raca": "nelore",
-        "peso": [
-            {
-                "peso": 78.0,
-                "data": "2026-05-29"
-            }
-        ],
-        "status": "engorda",
-        "preco": null,
-        "lote": "Lote A-2026"
-    },
-    "9Lote A-2026": {
-        "especie": "bovino",
-        "raca": "nelore",
-        "peso": [
-            {
-                "peso": 78.0,
-                "data": "2026-05-29"
-            }
-        ],
-        "status": "engorda",
-        "preco": null,
-        "lote": "Lote A-2026"
-    },
-    "05": {
-        "especie": "cabrino",
-        "raca": "bee",
         "historico_peso": [
             {
-                "peso": 60.0,
-                "data": "2026-05-29"
+                "peso": 250.0,
+                "data": "2022-01-15"
+            },
+            {
+                "peso": 361.5,
+                "data": "2022-12-15"
+            },
+            {
+                "peso": 723.0,
+                "data": "2023-01-15"
+            },
+            {
+                "peso": 1.084,
+                "data": "2023-12-15"
+            },
+            {
+                "peso": 250.0,
+                "data": "2024-01-15"
+            },
+            {
+                "peso": 1084.5,
+                "data": "2024-12-15"
             }
         ],
-        "status": "a venda",
-        "preco": 50.0,
-        "lote ": null
+        "status": "engorda",
+        "preco": null,
+        "lote": "engorda-2022"
+    },
+    "03 - engorda-2022": {
+        "especie": "bovino",
+        "raca": "nelore",
+        "historico_peso": [
+            {
+                "peso": 250.0,
+                "data": "2022-01-15"
+            },
+            {
+                "peso": 361.5,
+                "data": "2022-12-15"
+            },
+            {
+                "peso": 723.0,
+                "data": "2023-01-15"
+            },
+            {
+                "peso": 1.084,
+                "data": "2023-12-15"
+            },
+            {
+                "peso": 250.0,
+                "data": "2024-01-15"
+            },
+            {
+                "peso": 1084.5,
+                "data": "2024-12-15"
+            }
+        ],
+        "status": "engorda",
+        "preco": null,
+        "lote": "engorda-2022"
+    },
+    "04 - engorda-2022": {
+        "especie": "bovino",
+        "raca": "nelore",
+        "historico_peso": [
+            {
+                "peso": 250.0,
+                "data": "2022-01-15"
+            },
+            {
+                "peso": 361.5,
+                "data": "2022-12-15"
+            },
+            {
+                "peso": 723.0,
+                "data": "2023-01-15"
+            },
+            {
+                "peso": 1.084,
+                "data": "2023-12-15"
+            },
+            {
+                "peso": 250.0,
+                "data": "2024-01-15"
+            },
+            {
+                "peso": 1084.5,
+                "data": "2024-12-15"
+            }
+        ],
+        "status": "engorda",
+        "preco": null,
+        "lote": "engorda-2022"
+    },
+    "05 - engorda-2022": {
+        "especie": "bovino",
+        "raca": "nelore",
+        "historico_peso": [
+            {
+                "peso": 250.0,
+                "data": "2022-01-15"
+            },
+            {
+                "peso": 361.5,
+                "data": "2022-12-15"
+            },
+            {
+                "peso": 723.0,
+                "data": "2023-01-15"
+            },
+            {
+                "peso": 1.084,
+                "data": "2023-12-15"
+            },
+            {
+                "peso": 250.0,
+                "data": "2024-01-15"
+            },
+            {
+                "peso": 1084.5,
+                "data": "2024-12-15"
+            }
+        ],
+        "status": "engorda",
+        "preco": null,
+        "lote": "engorda-2022"
+    },
+    "06 - engorda-2022": {
+        "especie": "bovino",
+        "raca": "nelore",
+        "historico_peso": [
+            {
+                "peso": 250.0,
+                "data": "2022-01-15"
+            },
+            {
+                "peso": 361.5,
+                "data": "2022-12-15"
+            },
+            {
+                "peso": 723.0,
+                "data": "2023-01-15"
+            },
+            {
+                "peso": 1.084,
+                "data": "2023-12-15"
+            },
+            {
+                "peso": 250.0,
+                "data": "2024-01-15"
+            },
+            {
+                "peso": 1084.5,
+                "data": "2024-12-15"
+            }
+        ],
+        "status": "engorda",
+        "preco": null,
+        "lote": "engorda-2022"
+    },
+    "07 - engorda-2022": {
+        "especie": "bovino",
+        "raca": "nelore",
+        "historico_peso": [
+            {
+                "peso": 250.0,
+                "data": "2022-01-15"
+            },
+            {
+                "peso": 361.5,
+                "data": "2022-12-15"
+            },
+            {
+                "peso": 723.0,
+                "data": "2023-01-15"
+            },
+            {
+                "peso": 1.084,
+                "data": "2023-12-15"
+            },
+            {
+                "peso": 250.0,
+                "data": "2024-01-15"
+            },
+            {
+                "peso": 1084.5,
+                "data": "2024-12-15"
+            }
+        ],
+        "status": "engorda",
+        "preco": null,
+        "lote": "engorda-2022"
+    },
+    "08 - engorda-2022": {
+        "especie": "bovino",
+        "raca": "nelore",
+        "historico_peso": [
+            {
+                "peso": 250.0,
+                "data": "2022-01-15"
+            },
+            {
+                "peso": 361.5,
+                "data": "2022-12-15"
+            },
+            {
+                "peso": 723.0,
+                "data": "2023-01-15"
+            },
+            {
+                "peso": 1.084,
+                "data": "2023-12-15"
+            },
+            {
+                "peso": 250.0,
+                "data": "2024-01-15"
+            },
+            {
+                "peso": 1084.5,
+                "data": "2024-12-15"
+            }
+        ],
+        "status": "engorda",
+        "preco": null,
+        "lote": "engorda-2022"
+    },
+    "09 - engorda-2022": {
+        "especie": "bovino",
+        "raca": "nelore",
+        "historico_peso": [
+            {
+                "peso": 250.0,
+                "data": "2022-01-15"
+            },
+            {
+                "peso": 361.5,
+                "data": "2022-12-15"
+            },
+            {
+                "peso": 723.0,
+                "data": "2023-01-15"
+            },
+            {
+                "peso": 1.084,
+                "data": "2023-12-15"
+            },
+            {
+                "peso": 250.0,
+                "data": "2024-01-15"
+            },
+            {
+                "peso": 1084.5,
+                "data": "2024-12-15"
+            }
+        ],
+        "status": "engorda",
+        "preco": null,
+        "lote": "engorda-2022"
+    },
+    "010 - engorda-2022": {
+        "especie": "bovino",
+        "raca": "nelore",
+        "historico_peso": [
+            {
+                "peso": 250.0,
+                "data": "2022-01-15"
+            },
+            {
+                "peso": 361.5,
+                "data": "2022-12-15"
+            },
+            {
+                "peso": 723.0,
+                "data": "2023-01-15"
+            },
+            {
+                "peso": 1.084,
+                "data": "2023-12-15"
+            },
+            {
+                "peso": 250.0,
+                "data": "2024-01-15"
+            },
+            {
+                "peso": 1084.5,
+                "data": "2024-12-15"
+            }
+        ],
+        "status": "engorda",
+        "preco": null,
+        "lote": "engorda-2022"
+    },
+    "011 - engorda-2022": {
+        "especie": "bovino",
+        "raca": "nelore",
+        "historico_peso": [
+            {
+                "peso": 250.0,
+                "data": "2022-01-15"
+            },
+            {
+                "peso": 361.5,
+                "data": "2022-12-15"
+            },
+            {
+                "peso": 723.0,
+                "data": "2023-01-15"
+            },
+            {
+                "peso": 1.084,
+                "data": "2023-12-15"
+            },
+            {
+                "peso": 250.0,
+                "data": "2024-01-15"
+            },
+            {
+                "peso": 1084.5,
+                "data": "2024-12-15"
+            }
+        ],
+        "status": "engorda",
+        "preco": null,
+        "lote": "engorda-2022"
+    },
+    "012 - engorda-2022": {
+        "especie": "bovino",
+        "raca": "nelore",
+        "historico_peso": [
+            {
+                "peso": 250.0,
+                "data": "2022-01-15"
+            },
+            {
+                "peso": 361.5,
+                "data": "2022-12-15"
+            },
+            {
+                "peso": 723.0,
+                "data": "2023-01-15"
+            },
+            {
+                "peso": 1.084,
+                "data": "2023-12-15"
+            },
+            {
+                "peso": 250.0,
+                "data": "2024-01-15"
+            },
+            {
+                "peso": 1084.5,
+                "data": "2024-12-15"
+            }
+        ],
+        "status": "engorda",
+        "preco": null,
+        "lote": "engorda-2022"
+    },
+    "013 - engorda-2022": {
+        "especie": "bovino",
+        "raca": "nelore",
+        "historico_peso": [
+            {
+                "peso": 250.0,
+                "data": "2022-01-15"
+            },
+            {
+                "peso": 361.5,
+                "data": "2022-12-15"
+            },
+            {
+                "peso": 723.0,
+                "data": "2023-01-15"
+            },
+            {
+                "peso": 1.084,
+                "data": "2023-12-15"
+            },
+            {
+                "peso": 250.0,
+                "data": "2024-01-15"
+            },
+            {
+                "peso": 1084.5,
+                "data": "2024-12-15"
+            }
+        ],
+        "status": "engorda",
+        "preco": null,
+        "lote": "engorda-2022"
+    },
+    "014 - engorda-2022": {
+        "especie": "bovino",
+        "raca": "nelore",
+        "historico_peso": [
+            {
+                "peso": 250.0,
+                "data": "2022-01-15"
+            },
+            {
+                "peso": 361.5,
+                "data": "2022-12-15"
+            },
+            {
+                "peso": 723.0,
+                "data": "2023-01-15"
+            },
+            {
+                "peso": 1.084,
+                "data": "2023-12-15"
+            },
+            {
+                "peso": 250.0,
+                "data": "2024-01-15"
+            },
+            {
+                "peso": 1084.5,
+                "data": "2024-12-15"
+            }
+        ],
+        "status": "engorda",
+        "preco": null,
+        "lote": "engorda-2022"
+    },
+    "015 - engorda-2022": {
+        "especie": "bovino",
+        "raca": "nelore",
+        "historico_peso": [
+            {
+                "peso": 250.0,
+                "data": "2022-01-15"
+            },
+            {
+                "peso": 361.5,
+                "data": "2022-12-15"
+            },
+            {
+                "peso": 723.0,
+                "data": "2023-01-15"
+            },
+            {
+                "peso": 1.084,
+                "data": "2023-12-15"
+            },
+            {
+                "peso": 250.0,
+                "data": "2024-01-15"
+            },
+            {
+                "peso": 1084.5,
+                "data": "2024-12-15"
+            }
+        ],
+        "status": "engorda",
+        "preco": null,
+        "lote": "engorda-2022"
+    },
+    "016 - engorda-2022": {
+        "especie": "bovino",
+        "raca": "nelore",
+        "historico_peso": [
+            {
+                "peso": 250.0,
+                "data": "2022-01-15"
+            },
+            {
+                "peso": 361.5,
+                "data": "2022-12-15"
+            },
+            {
+                "peso": 723.0,
+                "data": "2023-01-15"
+            },
+            {
+                "peso": 1.084,
+                "data": "2023-12-15"
+            },
+            {
+                "peso": 250.0,
+                "data": "2024-01-15"
+            },
+            {
+                "peso": 1084.5,
+                "data": "2024-12-15"
+            }
+        ],
+        "status": "engorda",
+        "preco": null,
+        "lote": "engorda-2022"
+    },
+    "017 - engorda-2022": {
+        "especie": "bovino",
+        "raca": "nelore",
+        "historico_peso": [
+            {
+                "peso": 250.0,
+                "data": "2022-01-15"
+            },
+            {
+                "peso": 361.5,
+                "data": "2022-12-15"
+            },
+            {
+                "peso": 723.0,
+                "data": "2023-01-15"
+            },
+            {
+                "peso": 1.084,
+                "data": "2023-12-15"
+            },
+            {
+                "peso": 250.0,
+                "data": "2024-01-15"
+            },
+            {
+                "peso": 1084.5,
+                "data": "2024-12-15"
+            }
+        ],
+        "status": "engorda",
+        "preco": null,
+        "lote": "engorda-2022"
+    },
+    "018 - engorda-2022": {
+        "especie": "bovino",
+        "raca": "nelore",
+        "historico_peso": [
+            {
+                "peso": 250.0,
+                "data": "2022-01-15"
+            },
+            {
+                "peso": 361.5,
+                "data": "2022-12-15"
+            },
+            {
+                "peso": 723.0,
+                "data": "2023-01-15"
+            },
+            {
+                "peso": 1.084,
+                "data": "2023-12-15"
+            },
+            {
+                "peso": 250.0,
+                "data": "2024-01-15"
+            },
+            {
+                "peso": 1084.5,
+                "data": "2024-12-15"
+            }
+        ],
+        "status": "engorda",
+        "preco": null,
+        "lote": "engorda-2022"
+    },
+    "019 - engorda-2022": {
+        "especie": "bovino",
+        "raca": "nelore",
+        "historico_peso": [
+            {
+                "peso": 250.0,
+                "data": "2022-01-15"
+            },
+            {
+                "peso": 361.5,
+                "data": "2022-12-15"
+            },
+            {
+                "peso": 723.0,
+                "data": "2023-01-15"
+            },
+            {
+                "peso": 1.084,
+                "data": "2023-12-15"
+            },
+            {
+                "peso": 250.0,
+                "data": "2024-01-15"
+            },
+            {
+                "peso": 1084.5,
+                "data": "2024-12-15"
+            }
+        ],
+        "status": "engorda",
+        "preco": null,
+        "lote": "engorda-2022"
+    },
+    "020 - engorda-2022": {
+        "especie": "bovino",
+        "raca": "nelore",
+        "historico_peso": [
+            {
+                "peso": 250.0,
+                "data": "2022-01-15"
+            },
+            {
+                "peso": 361.5,
+                "data": "2022-12-15"
+            },
+            {
+                "peso": 723.0,
+                "data": "2023-01-15"
+            },
+            {
+                "peso": 1.084,
+                "data": "2023-12-15"
+            },
+            {
+                "peso": 250.0,
+                "data": "2024-01-15"
+            },
+            {
+                "peso": 1084.5,
+                "data": "2024-12-15"
+            }
+        ],
+        "status": "engorda",
+        "preco": null,
+        "lote": "engorda-2022"
+    },
+    "021 - engorda-2022": {
+        "especie": "bovino",
+        "raca": "nelore",
+        "historico_peso": [
+            {
+                "peso": 250.0,
+                "data": "2022-01-15"
+            },
+            {
+                "peso": 361.5,
+                "data": "2022-12-15"
+            },
+            {
+                "peso": 723.0,
+                "data": "2023-01-15"
+            },
+            {
+                "peso": 1.084,
+                "data": "2023-12-15"
+            },
+            {
+                "peso": 250.0,
+                "data": "2024-01-15"
+            },
+            {
+                "peso": 1084.5,
+                "data": "2024-12-15"
+            }
+        ],
+        "status": "engorda",
+        "preco": null,
+        "lote": "engorda-2022"
+    },
+    "022 - engorda-2022": {
+        "especie": "bovino",
+        "raca": "nelore",
+        "historico_peso": [
+            {
+                "peso": 250.0,
+                "data": "2022-01-15"
+            },
+            {
+                "peso": 361.5,
+                "data": "2022-12-15"
+            },
+            {
+                "peso": 723.0,
+                "data": "2023-01-15"
+            },
+            {
+                "peso": 1.084,
+                "data": "2023-12-15"
+            },
+            {
+                "peso": 250.0,
+                "data": "2024-01-15"
+            },
+            {
+                "peso": 1084.5,
+                "data": "2024-12-15"
+            }
+        ],
+        "status": "engorda",
+        "preco": null,
+        "lote": "engorda-2022"
+    },
+    "023 - engorda-2022": {
+        "especie": "bovino",
+        "raca": "nelore",
+        "historico_peso": [
+            {
+                "peso": 250.0,
+                "data": "2022-01-15"
+            },
+            {
+                "peso": 361.5,
+                "data": "2022-12-15"
+            },
+            {
+                "peso": 723.0,
+                "data": "2023-01-15"
+            },
+            {
+                "peso": 1.084,
+                "data": "2023-12-15"
+            },
+            {
+                "peso": 250.0,
+                "data": "2024-01-15"
+            },
+            {
+                "peso": 1084.5,
+                "data": "2024-12-15"
+            }
+        ],
+        "status": "engorda",
+        "preco": null,
+        "lote": "engorda-2022"
+    },
+    "024 - engorda-2022": {
+        "especie": "bovino",
+        "raca": "nelore",
+        "historico_peso": [
+            {
+                "peso": 250.0,
+                "data": "2022-01-15"
+            },
+            {
+                "peso": 361.5,
+                "data": "2022-12-15"
+            },
+            {
+                "peso": 723.0,
+                "data": "2023-01-15"
+            },
+            {
+                "peso": 1.084,
+                "data": "2023-12-15"
+            },
+            {
+                "peso": 250.0,
+                "data": "2024-01-15"
+            },
+            {
+                "peso": 1084.5,
+                "data": "2024-12-15"
+            }
+        ],
+        "status": "engorda",
+        "preco": null,
+        "lote": "engorda-2022"
+    },
+    "025 - engorda-2022": {
+        "especie": "bovino",
+        "raca": "nelore",
+        "historico_peso": [
+            {
+                "peso": 250.0,
+                "data": "2022-01-15"
+            },
+            {
+                "peso": 361.5,
+                "data": "2022-12-15"
+            },
+            {
+                "peso": 723.0,
+                "data": "2023-01-15"
+            },
+            {
+                "peso": 1.084,
+                "data": "2023-12-15"
+            },
+            {
+                "peso": 250.0,
+                "data": "2024-01-15"
+            },
+            {
+                "peso": 1084.5,
+                "data": "2024-12-15"
+            }
+        ],
+        "status": "engorda",
+        "preco": null,
+        "lote": "engorda-2022"
+    },
+    "026 - engorda-2022": {
+        "especie": "bovino",
+        "raca": "nelore",
+        "historico_peso": [
+            {
+                "peso": 250.0,
+                "data": "2022-01-15"
+            },
+            {
+                "peso": 361.5,
+                "data": "2022-12-15"
+            },
+            {
+                "peso": 723.0,
+                "data": "2023-01-15"
+            },
+            {
+                "peso": 1.084,
+                "data": "2023-12-15"
+            },
+            {
+                "peso": 250.0,
+                "data": "2024-01-15"
+            },
+            {
+                "peso": 1084.5,
+                "data": "2024-12-15"
+            }
+        ],
+        "status": "engorda",
+        "preco": null,
+        "lote": "engorda-2022"
+    },
+    "027 - engorda-2022": {
+        "especie": "bovino",
+        "raca": "nelore",
+        "historico_peso": [
+            {
+                "peso": 250.0,
+                "data": "2022-01-15"
+            },
+            {
+                "peso": 361.5,
+                "data": "2022-12-15"
+            },
+            {
+                "peso": 723.0,
+                "data": "2023-01-15"
+            },
+            {
+                "peso": 1.084,
+                "data": "2023-12-15"
+            },
+            {
+                "peso": 250.0,
+                "data": "2024-01-15"
+            },
+            {
+                "peso": 1084.5,
+                "data": "2024-12-15"
+            }
+        ],
+        "status": "engorda",
+        "preco": null,
+        "lote": "engorda-2022"
+    },
+    "028 - engorda-2022": {
+        "especie": "bovino",
+        "raca": "nelore",
+        "historico_peso": [
+            {
+                "peso": 250.0,
+                "data": "2022-01-15"
+            },
+            {
+                "peso": 361.5,
+                "data": "2022-12-15"
+            },
+            {
+                "peso": 723.0,
+                "data": "2023-01-15"
+            },
+            {
+                "peso": 1.084,
+                "data": "2023-12-15"
+            },
+            {
+                "peso": 250.0,
+                "data": "2024-01-15"
+            },
+            {
+                "peso": 1084.5,
+                "data": "2024-12-15"
+            }
+        ],
+        "status": "engorda",
+        "preco": null,
+        "lote": "engorda-2022"
+    },
+    "029 - engorda-2022": {
+        "especie": "bovino",
+        "raca": "nelore",
+        "historico_peso": [
+            {
+                "peso": 250.0,
+                "data": "2022-01-15"
+            },
+            {
+                "peso": 361.5,
+                "data": "2022-12-15"
+            },
+            {
+                "peso": 723.0,
+                "data": "2023-01-15"
+            },
+            {
+                "peso": 1.084,
+                "data": "2023-12-15"
+            },
+            {
+                "peso": 250.0,
+                "data": "2024-01-15"
+            },
+            {
+                "peso": 1084.5,
+                "data": "2024-12-15"
+            }
+        ],
+        "status": "engorda",
+        "preco": null,
+        "lote": "engorda-2022"
+    },
+    "030 - engorda-2022": {
+        "especie": "bovino",
+        "raca": "nelore",
+        "historico_peso": [
+            {
+                "peso": 250.0,
+                "data": "2022-01-15"
+            },
+            {
+                "peso": 361.5,
+                "data": "2022-12-15"
+            },
+            {
+                "peso": 723.0,
+                "data": "2023-01-15"
+            },
+            {
+                "peso": 1.084,
+                "data": "2023-12-15"
+            },
+            {
+                "peso": 250.0,
+                "data": "2024-01-15"
+            },
+            {
+                "peso": 1084.5,
+                "data": "2024-12-15"
+            }
+        ],
+        "status": "engorda",
+        "preco": null,
+        "lote": "engorda-2022"
+    },
+    "031 - engorda-2022": {
+        "especie": "bovino",
+        "raca": "nelore",
+        "historico_peso": [
+            {
+                "peso": 250.0,
+                "data": "2022-01-15"
+            },
+            {
+                "peso": 361.5,
+                "data": "2022-12-15"
+            },
+            {
+                "peso": 723.0,
+                "data": "2023-01-15"
+            },
+            {
+                "peso": 1.084,
+                "data": "2023-12-15"
+            },
+            {
+                "peso": 250.0,
+                "data": "2024-01-15"
+            },
+            {
+                "peso": 1084.5,
+                "data": "2024-12-15"
+            }
+        ],
+        "status": "engorda",
+        "preco": null,
+        "lote": "engorda-2022"
+    },
+    "032 - engorda-2022": {
+        "especie": "bovino",
+        "raca": "nelore",
+        "historico_peso": [
+            {
+                "peso": 250.0,
+                "data": "2022-01-15"
+            },
+            {
+                "peso": 361.5,
+                "data": "2022-12-15"
+            },
+            {
+                "peso": 723.0,
+                "data": "2023-01-15"
+            },
+            {
+                "peso": 1.084,
+                "data": "2023-12-15"
+            },
+            {
+                "peso": 250.0,
+                "data": "2024-01-15"
+            },
+            {
+                "peso": 1084.5,
+                "data": "2024-12-15"
+            }
+        ],
+        "status": "engorda",
+        "preco": null,
+        "lote": "engorda-2022"
+    },
+    "033 - engorda-2022": {
+        "especie": "bovino",
+        "raca": "nelore",
+        "historico_peso": [
+            {
+                "peso": 250.0,
+                "data": "2022-01-15"
+            },
+            {
+                "peso": 361.5,
+                "data": "2022-12-15"
+            },
+            {
+                "peso": 723.0,
+                "data": "2023-01-15"
+            },
+            {
+                "peso": 1.084,
+                "data": "2023-12-15"
+            },
+            {
+                "peso": 250.0,
+                "data": "2024-01-15"
+            },
+            {
+                "peso": 1084.5,
+                "data": "2024-12-15"
+            }
+        ],
+        "status": "engorda",
+        "preco": null,
+        "lote": "engorda-2022"
+    },
+    "034 - engorda-2022": {
+        "especie": "bovino",
+        "raca": "nelore",
+        "historico_peso": [
+            {
+                "peso": 250.0,
+                "data": "2022-01-15"
+            },
+            {
+                "peso": 361.5,
+                "data": "2022-12-15"
+            },
+            {
+                "peso": 723.0,
+                "data": "2023-01-15"
+            },
+            {
+                "peso": 1.084,
+                "data": "2023-12-15"
+            },
+            {
+                "peso": 250.0,
+                "data": "2024-01-15"
+            },
+            {
+                "peso": 1084.5,
+                "data": "2024-12-15"
+            }
+        ],
+        "status": "engorda",
+        "preco": null,
+        "lote": "engorda-2022"
+    },
+    "035 - engorda-2022": {
+        "especie": "bovino",
+        "raca": "nelore",
+        "historico_peso": [
+            {
+                "peso": 250.0,
+                "data": "2022-01-15"
+            },
+            {
+                "peso": 361.5,
+                "data": "2022-12-15"
+            },
+            {
+                "peso": 723.0,
+                "data": "2023-01-15"
+            },
+            {
+                "peso": 1.084,
+                "data": "2023-12-15"
+            },
+            {
+                "peso": 250.0,
+                "data": "2024-01-15"
+            },
+            {
+                "peso": 1084.5,
+                "data": "2024-12-15"
+            }
+        ],
+        "status": "engorda",
+        "preco": null,
+        "lote": "engorda-2022"
+    },
+    "036 - engorda-2022": {
+        "especie": "bovino",
+        "raca": "nelore",
+        "historico_peso": [
+            {
+                "peso": 250.0,
+                "data": "2022-01-15"
+            },
+            {
+                "peso": 361.5,
+                "data": "2022-12-15"
+            },
+            {
+                "peso": 723.0,
+                "data": "2023-01-15"
+            },
+            {
+                "peso": 1.084,
+                "data": "2023-12-15"
+            },
+            {
+                "peso": 250.0,
+                "data": "2024-01-15"
+            },
+            {
+                "peso": 1084.5,
+                "data": "2024-12-15"
+            }
+        ],
+        "status": "engorda",
+        "preco": null,
+        "lote": "engorda-2022"
+    },
+    "037 - engorda-2022": {
+        "especie": "bovino",
+        "raca": "nelore",
+        "historico_peso": [
+            {
+                "peso": 250.0,
+                "data": "2022-01-15"
+            },
+            {
+                "peso": 361.5,
+                "data": "2022-12-15"
+            },
+            {
+                "peso": 723.0,
+                "data": "2023-01-15"
+            },
+            {
+                "peso": 1.084,
+                "data": "2023-12-15"
+            },
+            {
+                "peso": 250.0,
+                "data": "2024-01-15"
+            },
+            {
+                "peso": 1084.5,
+                "data": "2024-12-15"
+            }
+        ],
+        "status": "engorda",
+        "preco": null,
+        "lote": "engorda-2022"
+    },
+    "038 - engorda-2022": {
+        "especie": "bovino",
+        "raca": "nelore",
+        "historico_peso": [
+            {
+                "peso": 250.0,
+                "data": "2022-01-15"
+            },
+            {
+                "peso": 361.5,
+                "data": "2022-12-15"
+            },
+            {
+                "peso": 723.0,
+                "data": "2023-01-15"
+            },
+            {
+                "peso": 1.084,
+                "data": "2023-12-15"
+            },
+            {
+                "peso": 250.0,
+                "data": "2024-01-15"
+            },
+            {
+                "peso": 1084.5,
+                "data": "2024-12-15"
+            }
+        ],
+        "status": "engorda",
+        "preco": null,
+        "lote": "engorda-2022"
+    },
+    "039 - engorda-2022": {
+        "especie": "bovino",
+        "raca": "nelore",
+        "historico_peso": [
+            {
+                "peso": 250.0,
+                "data": "2022-01-15"
+            },
+            {
+                "peso": 361.5,
+                "data": "2022-12-15"
+            },
+            {
+                "peso": 723.0,
+                "data": "2023-01-15"
+            },
+            {
+                "peso": 1.084,
+                "data": "2023-12-15"
+            },
+            {
+                "peso": 250.0,
+                "data": "2024-01-15"
+            },
+            {
+                "peso": 1084.5,
+                "data": "2024-12-15"
+            }
+        ],
+        "status": "engorda",
+        "preco": null,
+        "lote": "engorda-2022"
+    },
+    "040 - engorda-2022": {
+        "especie": "bovino",
+        "raca": "nelore",
+        "historico_peso": [
+            {
+                "peso": 250.0,
+                "data": "2022-01-15"
+            },
+            {
+                "peso": 361.5,
+                "data": "2022-12-15"
+            },
+            {
+                "peso": 723.0,
+                "data": "2023-01-15"
+            },
+            {
+                "peso": 1.084,
+                "data": "2023-12-15"
+            },
+            {
+                "peso": 250.0,
+                "data": "2024-01-15"
+            },
+            {
+                "peso": 1084.5,
+                "data": "2024-12-15"
+            }
+        ],
+        "status": "engorda",
+        "preco": null,
+        "lote": "engorda-2022"
+    },
+    "041 - engorda-2022": {
+        "especie": "bovino",
+        "raca": "nelore",
+        "historico_peso": [
+            {
+                "peso": 250.0,
+                "data": "2022-01-15"
+            },
+            {
+                "peso": 361.5,
+                "data": "2022-12-15"
+            },
+            {
+                "peso": 723.0,
+                "data": "2023-01-15"
+            },
+            {
+                "peso": 1.084,
+                "data": "2023-12-15"
+            },
+            {
+                "peso": 250.0,
+                "data": "2024-01-15"
+            },
+            {
+                "peso": 1084.5,
+                "data": "2024-12-15"
+            }
+        ],
+        "status": "engorda",
+        "preco": null,
+        "lote": "engorda-2022"
+    },
+    "042 - engorda-2022": {
+        "especie": "bovino",
+        "raca": "nelore",
+        "historico_peso": [
+            {
+                "peso": 250.0,
+                "data": "2022-01-15"
+            },
+            {
+                "peso": 361.5,
+                "data": "2022-12-15"
+            },
+            {
+                "peso": 723.0,
+                "data": "2023-01-15"
+            },
+            {
+                "peso": 1.084,
+                "data": "2023-12-15"
+            },
+            {
+                "peso": 250.0,
+                "data": "2024-01-15"
+            },
+            {
+                "peso": 1084.5,
+                "data": "2024-12-15"
+            }
+        ],
+        "status": "engorda",
+        "preco": null,
+        "lote": "engorda-2022"
+    },
+    "043 - engorda-2022": {
+        "especie": "bovino",
+        "raca": "nelore",
+        "historico_peso": [
+            {
+                "peso": 250.0,
+                "data": "2022-01-15"
+            },
+            {
+                "peso": 361.5,
+                "data": "2022-12-15"
+            },
+            {
+                "peso": 723.0,
+                "data": "2023-01-15"
+            },
+            {
+                "peso": 1.084,
+                "data": "2023-12-15"
+            },
+            {
+                "peso": 250.0,
+                "data": "2024-01-15"
+            },
+            {
+                "peso": 1084.5,
+                "data": "2024-12-15"
+            }
+        ],
+        "status": "engorda",
+        "preco": null,
+        "lote": "engorda-2022"
+    },
+    "044 - engorda-2022": {
+        "especie": "bovino",
+        "raca": "nelore",
+        "historico_peso": [
+            {
+                "peso": 250.0,
+                "data": "2022-01-15"
+            },
+            {
+                "peso": 361.5,
+                "data": "2022-12-15"
+            },
+            {
+                "peso": 723.0,
+                "data": "2023-01-15"
+            },
+            {
+                "peso": 1.084,
+                "data": "2023-12-15"
+            },
+            {
+                "peso": 250.0,
+                "data": "2024-01-15"
+            },
+            {
+                "peso": 1084.5,
+                "data": "2024-12-15"
+            }
+        ],
+        "status": "engorda",
+        "preco": null,
+        "lote": "engorda-2022"
+    },
+    "045 - engorda-2022": {
+        "especie": "bovino",
+        "raca": "nelore",
+        "historico_peso": [
+            {
+                "peso": 250.0,
+                "data": "2022-01-15"
+            },
+            {
+                "peso": 361.5,
+                "data": "2022-12-15"
+            },
+            {
+                "peso": 723.0,
+                "data": "2023-01-15"
+            },
+            {
+                "peso": 1.084,
+                "data": "2023-12-15"
+            },
+            {
+                "peso": 250.0,
+                "data": "2024-01-15"
+            },
+            {
+                "peso": 1084.5,
+                "data": "2024-12-15"
+            }
+        ],
+        "status": "engorda",
+        "preco": null,
+        "lote": "engorda-2022"
+    },
+    "046 - engorda-2022": {
+        "especie": "bovino",
+        "raca": "nelore",
+        "historico_peso": [
+            {
+                "peso": 250.0,
+                "data": "2022-01-15"
+            },
+            {
+                "peso": 361.5,
+                "data": "2022-12-15"
+            },
+            {
+                "peso": 723.0,
+                "data": "2023-01-15"
+            },
+            {
+                "peso": 1.084,
+                "data": "2023-12-15"
+            },
+            {
+                "peso": 250.0,
+                "data": "2024-01-15"
+            },
+            {
+                "peso": 1084.5,
+                "data": "2024-12-15"
+            }
+        ],
+        "status": "engorda",
+        "preco": null,
+        "lote": "engorda-2022"
+    },
+    "047 - engorda-2022": {
+        "especie": "bovino",
+        "raca": "nelore",
+        "historico_peso": [
+            {
+                "peso": 250.0,
+                "data": "2022-01-15"
+            },
+            {
+                "peso": 361.5,
+                "data": "2022-12-15"
+            },
+            {
+                "peso": 723.0,
+                "data": "2023-01-15"
+            },
+            {
+                "peso": 1.084,
+                "data": "2023-12-15"
+            },
+            {
+                "peso": 250.0,
+                "data": "2024-01-15"
+            },
+            {
+                "peso": 1084.5,
+                "data": "2024-12-15"
+            }
+        ],
+        "status": "engorda",
+        "preco": null,
+        "lote": "engorda-2022"
+    },
+    "048 - engorda-2022": {
+        "especie": "bovino",
+        "raca": "nelore",
+        "historico_peso": [
+            {
+                "peso": 250.0,
+                "data": "2022-01-15"
+            },
+            {
+                "peso": 361.5,
+                "data": "2022-12-15"
+            },
+            {
+                "peso": 723.0,
+                "data": "2023-01-15"
+            },
+            {
+                "peso": 1.084,
+                "data": "2023-12-15"
+            },
+            {
+                "peso": 250.0,
+                "data": "2024-01-15"
+            },
+            {
+                "peso": 1084.5,
+                "data": "2024-12-15"
+            }
+        ],
+        "status": "engorda",
+        "preco": null,
+        "lote": "engorda-2022"
+    },
+    "049 - engorda-2022": {
+        "especie": "bovino",
+        "raca": "nelore",
+        "historico_peso": [
+            {
+                "peso": 250.0,
+                "data": "2022-01-15"
+            },
+            {
+                "peso": 361.5,
+                "data": "2022-12-15"
+            },
+            {
+                "peso": 723.0,
+                "data": "2023-01-15"
+            },
+            {
+                "peso": 1.084,
+                "data": "2023-12-15"
+            },
+            {
+                "peso": 250.0,
+                "data": "2024-01-15"
+            },
+            {
+                "peso": 1084.5,
+                "data": "2024-12-15"
+            }
+        ],
+        "status": "engorda",
+        "preco": null,
+        "lote": "engorda-2022"
+    },
+    "050 - engorda-2022": {
+        "especie": "bovino",
+        "raca": "nelore",
+        "historico_peso": [
+            {
+                "peso": 250.0,
+                "data": "2022-01-15"
+            },
+            {
+                "peso": 361.5,
+                "data": "2022-12-15"
+            },
+            {
+                "peso": 723.0,
+                "data": "2023-01-15"
+            },
+            {
+                "peso": 1.084,
+                "data": "2023-12-15"
+            },
+            {
+                "peso": 250.0,
+                "data": "2024-01-15"
+            },
+            {
+                "peso": 1084.5,
+                "data": "2024-12-15"
+            }
+        ],
+        "status": "engorda",
+        "preco": null,
+        "lote": "engorda-2022"
+    },
+    "01 - engorda-2026": {
+        "especie": "bovino",
+        "raca": "nelore",
+        "historico_peso": [
+            {
+                "peso": 250.0,
+                "data": "2026-06-15"
+            },
+            {
+                "peso": 1084.5,
+                "data": "2026-12-15"
+            }
+        ],
+        "status": "engorda",
+        "preco": null,
+        "lote": "engorda-2026"
+    },
+    "02 - engorda-2026": {
+        "especie": "bovino",
+        "raca": "nelore",
+        "historico_peso": [
+            {
+                "peso": 250.0,
+                "data": "2026-06-15"
+            },
+            {
+                "peso": 1084.5,
+                "data": "2026-12-15"
+            }
+        ],
+        "status": "engorda",
+        "preco": null,
+        "lote": "engorda-2026"
+    },
+    "03 - engorda-2026": {
+        "especie": "bovino",
+        "raca": "nelore",
+        "historico_peso": [
+            {
+                "peso": 250.0,
+                "data": "2026-06-15"
+            },
+            {
+                "peso": 1084.5,
+                "data": "2026-12-15"
+            }
+        ],
+        "status": "engorda",
+        "preco": null,
+        "lote": "engorda-2026"
+    },
+    "04 - engorda-2026": {
+        "especie": "bovino",
+        "raca": "nelore",
+        "historico_peso": [
+            {
+                "peso": 250.0,
+                "data": "2026-06-15"
+            },
+            {
+                "peso": 1084.5,
+                "data": "2026-12-15"
+            }
+        ],
+        "status": "engorda",
+        "preco": null,
+        "lote": "engorda-2026"
+    },
+    "05 - engorda-2026": {
+        "especie": "bovino",
+        "raca": "nelore",
+        "historico_peso": [
+            {
+                "peso": 250.0,
+                "data": "2026-06-15"
+            },
+            {
+                "peso": 1084.5,
+                "data": "2026-12-15"
+            }
+        ],
+        "status": "engorda",
+        "preco": null,
+        "lote": "engorda-2026"
+    },
+    "06 - engorda-2026": {
+        "especie": "bovino",
+        "raca": "nelore",
+        "historico_peso": [
+            {
+                "peso": 250.0,
+                "data": "2026-06-15"
+            },
+            {
+                "peso": 1084.5,
+                "data": "2026-12-15"
+            }
+        ],
+        "status": "engorda",
+        "preco": null,
+        "lote": "engorda-2026"
+    },
+    "07 - engorda-2026": {
+        "especie": "bovino",
+        "raca": "nelore",
+        "historico_peso": [
+            {
+                "peso": 250.0,
+                "data": "2026-06-15"
+            },
+            {
+                "peso": 1084.5,
+                "data": "2026-12-15"
+            }
+        ],
+        "status": "engorda",
+        "preco": null,
+        "lote": "engorda-2026"
+    },
+    "08 - engorda-2026": {
+        "especie": "bovino",
+        "raca": "nelore",
+        "historico_peso": [
+            {
+                "peso": 250.0,
+                "data": "2026-06-15"
+            },
+            {
+                "peso": 1084.5,
+                "data": "2026-12-15"
+            }
+        ],
+        "status": "engorda",
+        "preco": null,
+        "lote": "engorda-2026"
+    },
+    "09 - engorda-2026": {
+        "especie": "bovino",
+        "raca": "nelore",
+        "historico_peso": [
+            {
+                "peso": 250.0,
+                "data": "2026-06-15"
+            },
+            {
+                "peso": 1084.5,
+                "data": "2026-12-15"
+            }
+        ],
+        "status": "engorda",
+        "preco": null,
+        "lote": "engorda-2026"
+    },
+    "010 - engorda-2026": {
+        "especie": "bovino",
+        "raca": "nelore",
+        "historico_peso": [
+            {
+                "peso": 250.0,
+                "data": "2026-06-15"
+            },
+            {
+                "peso": 1084.5,
+                "data": "2026-12-15"
+            }
+        ],
+        "status": "engorda",
+        "preco": null,
+        "lote": "engorda-2026"
+    },
+    "011 - engorda-2026": {
+        "especie": "bovino",
+        "raca": "nelore",
+        "historico_peso": [
+            {
+                "peso": 250.0,
+                "data": "2026-06-15"
+            },
+            {
+                "peso": 1084.5,
+                "data": "2026-12-15"
+            }
+        ],
+        "status": "engorda",
+        "preco": null,
+        "lote": "engorda-2026"
+    },
+    "012 - engorda-2026": {
+        "especie": "bovino",
+        "raca": "nelore",
+        "historico_peso": [
+            {
+                "peso": 250.0,
+                "data": "2026-06-15"
+            },
+            {
+                "peso": 1084.5,
+                "data": "2026-12-15"
+            }
+        ],
+        "status": "engorda",
+        "preco": null,
+        "lote": "engorda-2026"
+    },
+    "013 - engorda-2026": {
+        "especie": "bovino",
+        "raca": "nelore",
+        "historico_peso": [
+            {
+                "peso": 250.0,
+                "data": "2026-06-15"
+            },
+            {
+                "peso": 1084.5,
+                "data": "2026-12-15"
+            }
+        ],
+        "status": "engorda",
+        "preco": null,
+        "lote": "engorda-2026"
+    },
+    "014 - engorda-2026": {
+        "especie": "bovino",
+        "raca": "nelore",
+        "historico_peso": [
+            {
+                "peso": 250.0,
+                "data": "2026-06-15"
+            },
+            {
+                "peso": 1084.5,
+                "data": "2026-12-15"
+            }
+        ],
+        "status": "engorda",
+        "preco": null,
+        "lote": "engorda-2026"
+    },
+    "015 - engorda-2026": {
+        "especie": "bovino",
+        "raca": "nelore",
+        "historico_peso": [
+            {
+                "peso": 250.0,
+                "data": "2026-06-15"
+            },
+            {
+                "peso": 1084.5,
+                "data": "2026-12-15"
+            }
+        ],
+        "status": "engorda",
+        "preco": null,
+        "lote": "engorda-2026"
+    },
+    "016 - engorda-2026": {
+        "especie": "bovino",
+        "raca": "nelore",
+        "historico_peso": [
+            {
+                "peso": 250.0,
+                "data": "2026-06-15"
+            },
+            {
+                "peso": 1084.5,
+                "data": "2026-12-15"
+            }
+        ],
+        "status": "engorda",
+        "preco": null,
+        "lote": "engorda-2026"
+    },
+    "017 - engorda-2026": {
+        "especie": "bovino",
+        "raca": "nelore",
+        "historico_peso": [
+            {
+                "peso": 250.0,
+                "data": "2026-06-15"
+            },
+            {
+                "peso": 1084.5,
+                "data": "2026-12-15"
+            }
+        ],
+        "status": "engorda",
+        "preco": null,
+        "lote": "engorda-2026"
+    },
+    "018 - engorda-2026": {
+        "especie": "bovino",
+        "raca": "nelore",
+        "historico_peso": [
+            {
+                "peso": 250.0,
+                "data": "2026-06-15"
+            },
+            {
+                "peso": 1084.5,
+                "data": "2026-12-15"
+            }
+        ],
+        "status": "engorda",
+        "preco": null,
+        "lote": "engorda-2026"
+    },
+    "019 - engorda-2026": {
+        "especie": "bovino",
+        "raca": "nelore",
+        "historico_peso": [
+            {
+                "peso": 250.0,
+                "data": "2026-06-15"
+            },
+            {
+                "peso": 1084.5,
+                "data": "2026-12-15"
+            }
+        ],
+        "status": "engorda",
+        "preco": null,
+        "lote": "engorda-2026"
+    },
+    "020 - engorda-2026": {
+        "especie": "bovino",
+        "raca": "nelore",
+        "historico_peso": [
+            {
+                "peso": 250.0,
+                "data": "2026-06-15"
+            },
+            {
+                "peso": 1084.5,
+                "data": "2026-12-15"
+            }
+        ],
+        "status": "engorda",
+        "preco": null,
+        "lote": "engorda-2026"
+    },
+    "021 - engorda-2026": {
+        "especie": "bovino",
+        "raca": "nelore",
+        "historico_peso": [
+            {
+                "peso": 250.0,
+                "data": "2026-06-15"
+            },
+            {
+                "peso": 1084.5,
+                "data": "2026-12-15"
+            }
+        ],
+        "status": "engorda",
+        "preco": null,
+        "lote": "engorda-2026"
+    },
+    "022 - engorda-2026": {
+        "especie": "bovino",
+        "raca": "nelore",
+        "historico_peso": [
+            {
+                "peso": 250.0,
+                "data": "2026-06-15"
+            },
+            {
+                "peso": 1084.5,
+                "data": "2026-12-15"
+            }
+        ],
+        "status": "engorda",
+        "preco": null,
+        "lote": "engorda-2026"
+    },
+    "023 - engorda-2026": {
+        "especie": "bovino",
+        "raca": "nelore",
+        "historico_peso": [
+            {
+                "peso": 250.0,
+                "data": "2026-06-15"
+            },
+            {
+                "peso": 1084.5,
+                "data": "2026-12-15"
+            }
+        ],
+        "status": "engorda",
+        "preco": null,
+        "lote": "engorda-2026"
+    },
+    "024 - engorda-2026": {
+        "especie": "bovino",
+        "raca": "nelore",
+        "historico_peso": [
+            {
+                "peso": 250.0,
+                "data": "2026-06-15"
+            },
+            {
+                "peso": 1084.5,
+                "data": "2026-12-15"
+            }
+        ],
+        "status": "engorda",
+        "preco": null,
+        "lote": "engorda-2026"
+    },
+    "025 - engorda-2026": {
+        "especie": "bovino",
+        "raca": "nelore",
+        "historico_peso": [
+            {
+                "peso": 250.0,
+                "data": "2026-06-15"
+            },
+            {
+                "peso": 1084.5,
+                "data": "2026-12-15"
+            }
+        ],
+        "status": "engorda",
+        "preco": null,
+        "lote": "engorda-2026"
+    },
+    "026 - engorda-2026": {
+        "especie": "bovino",
+        "raca": "nelore",
+        "historico_peso": [
+            {
+                "peso": 250.0,
+                "data": "2026-06-15"
+            },
+            {
+                "peso": 1084.5,
+                "data": "2026-12-15"
+            }
+        ],
+        "status": "engorda",
+        "preco": null,
+        "lote": "engorda-2026"
+    },
+    "027 - engorda-2026": {
+        "especie": "bovino",
+        "raca": "nelore",
+        "historico_peso": [
+            {
+                "peso": 250.0,
+                "data": "2026-06-15"
+            },
+            {
+                "peso": 1084.5,
+                "data": "2026-12-15"
+            }
+        ],
+        "status": "engorda",
+        "preco": null,
+        "lote": "engorda-2026"
+    },
+    "028 - engorda-2026": {
+        "especie": "bovino",
+        "raca": "nelore",
+        "historico_peso": [
+            {
+                "peso": 250.0,
+                "data": "2026-06-15"
+            },
+            {
+                "peso": 1084.5,
+                "data": "2026-12-15"
+            }
+        ],
+        "status": "engorda",
+        "preco": null,
+        "lote": "engorda-2026"
+    },
+    "029 - engorda-2026": {
+        "especie": "bovino",
+        "raca": "nelore",
+        "historico_peso": [
+            {
+                "peso": 250.0,
+                "data": "2026-06-15"
+            },
+            {
+                "peso": 1084.5,
+                "data": "2026-12-15"
+            }
+        ],
+        "status": "engorda",
+        "preco": null,
+        "lote": "engorda-2026"
+    },
+    "030 - engorda-2026": {
+        "especie": "bovino",
+        "raca": "nelore",
+        "historico_peso": [
+            {
+                "peso": 250.0,
+                "data": "2026-06-15"
+            },
+            {
+                "peso": 1084.5,
+                "data": "2026-12-15"
+            }
+        ],
+        "status": "engorda",
+        "preco": null,
+        "lote": "engorda-2026"
+    },
+    "031 - engorda-2026": {
+        "especie": "bovino",
+        "raca": "nelore",
+        "historico_peso": [
+            {
+                "peso": 250.0,
+                "data": "2026-06-15"
+            },
+            {
+                "peso": 1084.5,
+                "data": "2026-12-15"
+            }
+        ],
+        "status": "engorda",
+        "preco": null,
+        "lote": "engorda-2026"
+    },
+    "032 - engorda-2026": {
+        "especie": "bovino",
+        "raca": "nelore",
+        "historico_peso": [
+            {
+                "peso": 250.0,
+                "data": "2026-06-15"
+            },
+            {
+                "peso": 1084.5,
+                "data": "2026-12-15"
+            }
+        ],
+        "status": "engorda",
+        "preco": null,
+        "lote": "engorda-2026"
+    },
+    "033 - engorda-2026": {
+        "especie": "bovino",
+        "raca": "nelore",
+        "historico_peso": [
+            {
+                "peso": 250.0,
+                "data": "2026-06-15"
+            },
+            {
+                "peso": 1084.5,
+                "data": "2026-12-15"
+            }
+        ],
+        "status": "engorda",
+        "preco": null,
+        "lote": "engorda-2026"
+    },
+    "034 - engorda-2026": {
+        "especie": "bovino",
+        "raca": "nelore",
+        "historico_peso": [
+            {
+                "peso": 250.0,
+                "data": "2026-06-15"
+            },
+            {
+                "peso": 1084.5,
+                "data": "2026-12-15"
+            }
+        ],
+        "status": "engorda",
+        "preco": null,
+        "lote": "engorda-2026"
+    },
+    "035 - engorda-2026": {
+        "especie": "bovino",
+        "raca": "nelore",
+        "historico_peso": [
+            {
+                "peso": 250.0,
+                "data": "2026-06-15"
+            },
+            {
+                "peso": 1084.5,
+                "data": "2026-12-15"
+            }
+        ],
+        "status": "engorda",
+        "preco": null,
+        "lote": "engorda-2026"
+    },
+    "036 - engorda-2026": {
+        "especie": "bovino",
+        "raca": "nelore",
+        "historico_peso": [
+            {
+                "peso": 250.0,
+                "data": "2026-06-15"
+            },
+            {
+                "peso": 1084.5,
+                "data": "2026-12-15"
+            }
+        ],
+        "status": "engorda",
+        "preco": null,
+        "lote": "engorda-2026"
+    },
+    "037 - engorda-2026": {
+        "especie": "bovino",
+        "raca": "nelore",
+        "historico_peso": [
+            {
+                "peso": 250.0,
+                "data": "2026-06-15"
+            },
+            {
+                "peso": 1084.5,
+                "data": "2026-12-15"
+            }
+        ],
+        "status": "engorda",
+        "preco": null,
+        "lote": "engorda-2026"
+    },
+    "038 - engorda-2026": {
+        "especie": "bovino",
+        "raca": "nelore",
+        "historico_peso": [
+            {
+                "peso": 250.0,
+                "data": "2026-06-15"
+            },
+            {
+                "peso": 1084.5,
+                "data": "2026-12-15"
+            }
+        ],
+        "status": "engorda",
+        "preco": null,
+        "lote": "engorda-2026"
+    },
+    "039 - engorda-2026": {
+        "especie": "bovino",
+        "raca": "nelore",
+        "historico_peso": [
+            {
+                "peso": 250.0,
+                "data": "2026-06-15"
+            },
+            {
+                "peso": 1084.5,
+                "data": "2026-12-15"
+            }
+        ],
+        "status": "engorda",
+        "preco": null,
+        "lote": "engorda-2026"
+    },
+    "040 - engorda-2026": {
+        "especie": "bovino",
+        "raca": "nelore",
+        "historico_peso": [
+            {
+                "peso": 250.0,
+                "data": "2026-06-15"
+            },
+            {
+                "peso": 1084.5,
+                "data": "2026-12-15"
+            }
+        ],
+        "status": "engorda",
+        "preco": null,
+        "lote": "engorda-2026"
+    },
+    "041 - engorda-2026": {
+        "especie": "bovino",
+        "raca": "nelore",
+        "historico_peso": [
+            {
+                "peso": 250.0,
+                "data": "2026-06-15"
+            },
+            {
+                "peso": 1084.5,
+                "data": "2026-12-15"
+            }
+        ],
+        "status": "engorda",
+        "preco": null,
+        "lote": "engorda-2026"
+    },
+    "042 - engorda-2026": {
+        "especie": "bovino",
+        "raca": "nelore",
+        "historico_peso": [
+            {
+                "peso": 250.0,
+                "data": "2026-06-15"
+            },
+            {
+                "peso": 1084.5,
+                "data": "2026-12-15"
+            }
+        ],
+        "status": "engorda",
+        "preco": null,
+        "lote": "engorda-2026"
+    },
+    "043 - engorda-2026": {
+        "especie": "bovino",
+        "raca": "nelore",
+        "historico_peso": [
+            {
+                "peso": 250.0,
+                "data": "2026-06-15"
+            },
+            {
+                "peso": 1084.5,
+                "data": "2026-12-15"
+            }
+        ],
+        "status": "engorda",
+        "preco": null,
+        "lote": "engorda-2026"
+    },
+    "044 - engorda-2026": {
+        "especie": "bovino",
+        "raca": "nelore",
+        "historico_peso": [
+            {
+                "peso": 250.0,
+                "data": "2026-06-15"
+            },
+            {
+                "peso": 1084.5,
+                "data": "2026-12-15"
+            }
+        ],
+        "status": "engorda",
+        "preco": null,
+        "lote": "engorda-2026"
+    },
+    "045 - engorda-2026": {
+        "especie": "bovino",
+        "raca": "nelore",
+        "historico_peso": [
+            {
+                "peso": 250.0,
+                "data": "2026-06-15"
+            },
+            {
+                "peso": 1084.5,
+                "data": "2026-12-15"
+            }
+        ],
+        "status": "engorda",
+        "preco": null,
+        "lote": "engorda-2026"
+    },
+    "046 - engorda-2026": {
+        "especie": "bovino",
+        "raca": "nelore",
+        "historico_peso": [
+            {
+                "peso": 250.0,
+                "data": "2026-06-15"
+            },
+            {
+                "peso": 1084.5,
+                "data": "2026-12-15"
+            }
+        ],
+        "status": "engorda",
+        "preco": null,
+        "lote": "engorda-2026"
+    },
+    "047 - engorda-2026": {
+        "especie": "bovino",
+        "raca": "nelore",
+        "historico_peso": [
+            {
+                "peso": 250.0,
+                "data": "2026-06-15"
+            },
+            {
+                "peso": 1084.5,
+                "data": "2026-12-15"
+            }
+        ],
+        "status": "engorda",
+        "preco": null,
+        "lote": "engorda-2026"
+    },
+    "048 - engorda-2026": {
+        "especie": "bovino",
+        "raca": "nelore",
+        "historico_peso": [
+            {
+                "peso": 250.0,
+                "data": "2026-06-15"
+            },
+            {
+                "peso": 1084.5,
+                "data": "2026-12-15"
+            }
+        ],
+        "status": "engorda",
+        "preco": null,
+        "lote": "engorda-2026"
+    },
+    "049 - engorda-2026": {
+        "especie": "bovino",
+        "raca": "nelore",
+        "historico_peso": [
+            {
+                "peso": 250.0,
+                "data": "2026-06-15"
+            },
+            {
+                "peso": 1084.5,
+                "data": "2026-12-15"
+            }
+        ],
+        "status": "engorda",
+        "preco": null,
+        "lote": "engorda-2026"
+    },
+    "050 - engorda-2026": {
+        "especie": "bovino",
+        "raca": "nelore",
+        "historico_peso": [
+            {
+                "peso": 250.0,
+                "data": "2026-06-15"
+            },
+            {
+                "peso": 1084.5,
+                "data": "2026-12-15"
+            }
+        ],
+        "status": "engorda",
+        "preco": null,
+        "lote": "engorda-2026"
     }
 }

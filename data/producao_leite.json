@@ -1,0 +1,12 @@
+{
+    "01": [
+        {
+            "quantidade_leite": 10.0,
+            "data_retirada": "2026-06-14"
+        },
+        {
+            "quantidade_leite": 12.0,
+            "data_retirada": "2026-08-14"
+        }
+    ]
+}

@@ -21,11 +21,6 @@ def verificar_existe(dicionario: dict, identificacao: str):
     
     return True
 
-def buscar_por_identificacao (dicionario: dict, identificacao: str):
-
-    return dicionario.get(identificacao) 
-      
-    
 
 
 def limpar():
@@ -56,6 +51,8 @@ def deslogar(login: dict):
     login["usuario"]= None
     login["tipo_usuario"] = None
 
+    print(" [red] Deslogando... [/red]")
+
 
 def logar(usuarios: dict, login: dict):
 
@@ -69,9 +66,6 @@ def logar(usuarios: dict, login: dict):
             login ["logado"] = True
             login ["usuario"] = email
             login ["tipo_usuario"] = usuarios[email]["tipo_usuario"]
-
-            print("[green] Seja bem-vindo(a) ![/green]")
-            print("---------------------------------------------")
 
         else:
             print(" [red] Senha incorreta! [/red]\n")
